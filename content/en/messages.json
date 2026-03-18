@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "role": "Graphic Designer · UX/UI · Digital Marketing",
+    "headline": "Design with purpose,\ncommunicate with impact.",
+    "cta": "See my work"
+  },
+  "work": {
+    "title": "Work",
+    "subtitle": "A selection of design, UX/UI, and marketing projects.",
+    "emptyState": "Projects coming soon."
+  },
+  "about": {
+    "title": "About",
+    "bio": "I'm Fernanda San German, a graphic designer with experience in UX/UI and digital marketing. I create visual experiences that connect brands with people.",
+    "skills": {
+      "title": "Skills",
+      "list": ["Graphic Design", "UX/UI", "Digital Marketing", "Branding", "Campaign Design"]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk.",
+    "email": "Email",
+    "send": "Send message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Tell me about your project..."
+  },
+  "footer": {
+    "rights": "Fernanda San German. All rights reserved."
+  }
+}
