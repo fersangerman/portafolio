@@ -1,26 +1,23 @@
 {
   "nav": {
-    "work": "Trabajo",
-    "about": "Sobre mí",
+    "portfolio": "Portafolio",
+    "services": "Servicios",
     "contact": "Contacto"
   },
   "home": {
     "role": "Diseñadora Gráfica · UX/UI · Marketing Digital",
     "headline": "Diseño con propósito,\ncomunico con impacto.",
-    "cta": "Ver trabajo"
+    "cta": "Ver portafolio"
   },
-  "work": {
-    "title": "Trabajo",
+  "portfolio": {
+    "title": "Portafolio",
     "subtitle": "Una selección de proyectos de diseño, UX/UI y marketing.",
     "emptyState": "Proyectos próximamente."
   },
-  "about": {
-    "title": "Sobre mí",
-    "bio": "Soy Fernanda San German, diseñadora gráfica con experiencia en UX/UI y marketing digital. Creo experiencias visuales que conectan marcas con personas.",
-    "skills": {
-      "title": "Habilidades",
-      "list": ["Diseño Gráfico", "UX/UI", "Marketing Digital", "Branding", "Diseño de Campañas"]
-    }
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Lo que puedo hacer por ti y tu marca.",
+    "emptyState": "Servicios próximamente."
   },
   "contact": {
     "title": "Contacto",

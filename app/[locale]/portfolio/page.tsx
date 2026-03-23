@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-export default function Work() {
-  const t = useTranslations("work");
+export default function Portfolio() {
+  const t = useTranslations("portfolio");
 
   return (
     <section className="px-6 md:px-12 lg:px-24 py-20">

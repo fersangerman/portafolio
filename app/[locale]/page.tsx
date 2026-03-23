@@ -17,7 +17,7 @@ export default function Home() {
           {t("headline")}
         </h1>
         <Link
-          href={`/${locale}/work`}
+          href={`/${locale}/portfolio`}
           className="mt-10 inline-flex items-center gap-2 text-sm font-medium text-black border border-black px-5 py-2.5 rounded hover:bg-black hover:text-white transition-colors w-fit"
         >
           {t("cta")} →

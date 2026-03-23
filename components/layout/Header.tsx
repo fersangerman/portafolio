@@ -25,11 +25,11 @@ export default function Header() {
       </Link>
 
       <nav className="flex items-center gap-6 text-sm">
-        <Link href={`/${locale}/work`} className="text-gray-600 hover:text-black transition-colors">
-          {t("work")}
+        <Link href={`/${locale}/portfolio`} className="text-gray-600 hover:text-black transition-colors">
+          {t("portfolio")}
         </Link>
-        <Link href={`/${locale}/about`} className="text-gray-600 hover:text-black transition-colors">
-          {t("about")}
+        <Link href={`/${locale}/services`} className="text-gray-600 hover:text-black transition-colors">
+          {t("services")}
         </Link>
         <Link href={`/${locale}/contact`} className="text-gray-600 hover:text-black transition-colors">
           {t("contact")}
