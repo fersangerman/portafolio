@@ -2,6 +2,7 @@
   "nav": {
     "portfolio": "Portfolio",
     "services": "Services",
+    "about": "About",
     "contact": "Contact"
   },
   "home": {
@@ -18,6 +19,14 @@
     "title": "Services",
     "subtitle": "What I can do for you and your brand.",
     "emptyState": "Services coming soon."
+  },
+  "about": {
+    "title": "About",
+    "bio": "I'm Fernanda San German, a graphic designer with experience in UX/UI and digital marketing. I create visual experiences that connect brands with people.",
+    "skills": {
+      "title": "Skills",
+      "list": ["Graphic Design", "UX/UI", "Digital Marketing", "Branding", "Campaign Design"]
+    }
   },
   "contact": {
     "title": "Contact",
