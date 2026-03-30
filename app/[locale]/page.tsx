@@ -79,12 +79,13 @@ export default async function Home() {
           >
             {t("cta")} →
           </Link>
-          <Link
-            href={`/${locale}/contact`}
+          <a
+            href="/Fernanda_SanGerman_CV.pdf"
+            download
             className="text-sm font-medium text-ink-muted hover:text-ink transition-colors"
           >
-            {locale === "es" ? "Contactar" : "Get in touch"}
-          </Link>
+            {locale === "es" ? "Descargar CV" : "Download CV"}
+          </a>
         </div>
       </section>
 
