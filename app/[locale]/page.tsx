@@ -1,44 +1,39 @@
-import { useTranslations, useLocale } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
 import ProjectCard, { type Project } from "@/components/ui/ProjectCard";
 import ServiceCard from "@/components/ui/ServiceCard";
 
-// Placeholder projects — se reemplazarán con datos reales
 const placeholderProjects: Project[] = [
   {
-    slug: "placeholder-1",
+    slug: "placeholder-1", categoryKey: "graphic",
     title: "Identidad de marca — Ejemplo",
     category: "Diseño Gráfico",
+    description: "Desarrollo de identidad visual completa incluyendo logotipo, paleta de color y guía de marca.",
     tags: ["Branding", "Identidad Visual"],
-    coverColor: "#f0ece6",
+    coverColor: "#DDD5F0",
   },
   {
-    slug: "placeholder-2",
+    slug: "placeholder-2", categoryKey: "uxui",
     title: "Rediseño UX — App móvil",
     category: "UX/UI",
+    description: "Investigación de usuario, wireframes y prototipo de alta fidelidad para aplicación móvil.",
     tags: ["UX Research", "Prototipo", "Figma"],
-    coverColor: "#e6eef0",
+    coverColor: "#D5E8F0",
   },
   {
-    slug: "placeholder-3",
+    slug: "placeholder-3", categoryKey: "marketing",
     title: "Campaña Digital — Redes sociales",
     category: "Marketing Digital",
+    description: "Estrategia y diseño de piezas visuales para campaña en redes sociales.",
     tags: ["Social Media", "Diseño", "Estrategia"],
-    coverColor: "#ece6f0",
-  },
-  {
-    slug: "placeholder-4",
-    title: "Diseño editorial — Revista",
-    category: "Diseño Gráfico",
-    tags: ["Editorial", "Tipografía", "Layout"],
-    coverColor: "#f0f0e6",
+    coverColor: "#F0EDE8",
   },
 ];
 
-export default function Home() {
-  const t = useTranslations("home");
-  const st = useTranslations("services");
-  const locale = useLocale();
+export default async function Home() {
+  const t = await getTranslations("home");
+  const st = await getTranslations("services");
+  const locale = await getLocale();
 
   const services = [
     {
@@ -71,35 +66,48 @@ export default function Home() {
     <div>
       {/* ── Hero ── */}
       <section className="min-h-[calc(100vh-4rem)] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
-        <p className="text-sm text-gray-400 uppercase tracking-widest mb-5">
+        <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-6 font-medium">
           {t("role")}
         </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight max-w-4xl whitespace-pre-line">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight max-w-4xl whitespace-pre-line text-ink">
           {t("headline")}
         </h1>
-        <Link
-          href={`/${locale}/portfolio`}
-          className="mt-12 inline-flex items-center gap-2 text-sm font-medium text-black border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition-colors w-fit"
-        >
-          {t("cta")} →
-        </Link>
+        <div className="mt-12 flex items-center gap-6">
+          <Link
+            href={`/${locale}/portfolio`}
+            className="inline-flex items-center gap-2 text-sm font-semibold bg-violet text-white px-7 py-3.5 rounded-full hover:bg-violet-dark transition-colors"
+          >
+            {t("cta")} →
+          </Link>
+          <Link
+            href={`/${locale}/contact`}
+            className="text-sm font-medium text-ink-muted hover:text-ink transition-colors"
+          >
+            {locale === "es" ? "Contactar" : "Get in touch"}
+          </Link>
+        </div>
       </section>
 
       {/* ── Portafolio ── */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-gray-100">
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-border">
         <div className="flex items-end justify-between mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-            {locale === "es" ? "Portafolio" : "Portfolio"}
-          </h2>
+          <div>
+            <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-3 font-medium">
+              {locale === "es" ? "Trabajo selecto" : "Selected work"}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-ink">
+              {locale === "es" ? "Portafolio" : "Portfolio"}
+            </h2>
+          </div>
           <Link
             href={`/${locale}/portfolio`}
-            className="text-sm text-gray-400 hover:text-black transition-colors hidden md:block"
+            className="text-sm text-ink-muted hover:text-ink transition-colors hidden md:flex items-center gap-1.5 font-medium"
           >
-            {locale === "es" ? "Ver todos →" : "View all →"}
+            {locale === "es" ? "Ver todos" : "View all"} →
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {placeholderProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
@@ -108,7 +116,7 @@ export default function Home() {
         <div className="mt-8 md:hidden">
           <Link
             href={`/${locale}/portfolio`}
-            className="text-sm text-gray-400 hover:text-black transition-colors"
+            className="text-sm text-ink-muted hover:text-ink transition-colors font-medium"
           >
             {locale === "es" ? "Ver todos →" : "View all →"}
           </Link>
@@ -116,16 +124,21 @@ export default function Home() {
       </section>
 
       {/* ── Servicios ── */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-gray-100">
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-border bg-cream-dark">
         <div className="flex items-end justify-between mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-            {st("title")}
-          </h2>
+          <div>
+            <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-3 font-medium">
+              {locale === "es" ? "Qué hago" : "What I do"}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-ink">
+              {st("title")}
+            </h2>
+          </div>
           <Link
             href={`/${locale}/services`}
-            className="text-sm text-gray-400 hover:text-black transition-colors hidden md:block"
+            className="text-sm text-ink-muted hover:text-ink transition-colors hidden md:flex items-center gap-1.5 font-medium"
           >
-            {locale === "es" ? "Ver servicios →" : "All services →"}
+            {locale === "es" ? "Ver servicios" : "All services"} →
           </Link>
         </div>
 
@@ -142,23 +155,26 @@ export default function Home() {
       </section>
 
       {/* ── Contacto CTA ── */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-gray-100">
+      <section className="px-6 md:px-12 lg:px-24 py-32 border-t border-border">
         <div className="max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
+          <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-4 font-medium">
+            {locale === "es" ? "Hablemos" : "Let's talk"}
+          </p>
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-5 text-ink">
             {locale === "es"
               ? "¿Tienes un proyecto en mente?"
               : "Have a project in mind?"}
           </h2>
-          <p className="text-gray-500 mb-8">
+          <p className="text-ink-muted mb-10 text-lg leading-relaxed">
             {locale === "es"
-              ? "Estoy disponible para proyectos freelance y colaboraciones. Hablemos."
-              : "I'm available for freelance projects and collaborations. Let's talk."}
+              ? "Estoy disponible para proyectos freelance y colaboraciones."
+              : "I'm available for freelance projects and collaborations."}
           </p>
           <Link
             href={`/${locale}/contact`}
-            className="inline-flex items-center gap-2 bg-black text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-ink text-cream text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-violet transition-colors"
           >
-            {locale === "es" ? "Escribir mensaje →" : "Send a message →"}
+            {locale === "es" ? "Escribir mensaje" : "Send a message"} →
           </Link>
         </div>
       </section>

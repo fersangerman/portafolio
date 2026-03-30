@@ -1,0 +1,19 @@
+{
+  "title": "Koktel",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2023–2024",
+  "client": "Koktel",
+  "description": "UX Writing and UI design for Koktel. Brand voice definition, user flows, and interface design.",
+  "coverColor": "#7A5F9E",
+  "tags": ["UX Writing", "UI Design", "Brand Voice", "Figma"],
+  "order": 10,
+  "gridVariant": null,
+  "images": [],
+  "process": {
+    "challenge": "Koktel needed a clear brand voice and a cohesive interface that consistently expressed its personality across all touchpoints.",
+    "approach": "I developed the UX Writing system — defining the voice, tone, and language patterns — then designed the user flows and UI, ensuring alignment between copy and visuals.",
+    "results": "Documented UX Writing system and implemented UI with aligned verbal and visual identity."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Archipiélago",
+  "category": "Diseño Gráfico",
+  "categoryKey": "graphic",
+  "caseType": "gallery",
+  "year": "2019–2021",
+  "client": "Archipiélago",
+  "description": "Piezas gráficas digitales e impresas para múltiples clientes de la agencia Archipiélago: Zaranda, Parcela, NFL, Café Paraíso y Cancino.",
+  "coverColor": "#3D3530",
+  "tags": ["Diseño Gráfico", "Agencia", "Branding", "Print"],
+  "order": 4,
+  "gridVariant": null,
+  "clients": [
+    { "name": "Zaranda", "images": [] },
+    { "name": "Parcela", "images": [] },
+    { "name": "NFL", "images": [] },
+    { "name": "Café Paraíso", "images": [] },
+    { "name": "Cancino", "images": [] }
+  ],
+  "images": []
+}

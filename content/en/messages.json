@@ -12,32 +12,46 @@
   },
   "portfolio": {
     "title": "Portfolio",
-    "subtitle": "A selection of design, UX/UI, and marketing projects.",
+    "subtitle": "A selection of graphic design, UX/UI, and digital marketing projects.",
     "emptyState": "Projects coming soon."
   },
   "services": {
     "title": "Services",
-    "subtitle": "What I can do for you and your brand.",
-    "emptyState": "Services coming soon."
+    "subtitle": "Design and strategy for brands that want to communicate better."
   },
   "about": {
     "title": "About",
-    "bio": "I'm Fernanda San German, a graphic designer with experience in UX/UI and digital marketing. I create visual experiences that connect brands with people.",
+    "bio": "I'm a hybrid professional in digital marketing and graphic design/UX-UI, with over 6 years of experience managing digital campaigns, analyzing KPIs, handling budgets, and creating visual content. I'm passionate about building solid visual identities and developing digital strategies with real impact. I've also embraced AI tools like Claude Code, integrating them naturally into my workflow to be more agile and creative in every project.",
     "skills": {
       "title": "Skills",
-      "list": ["Graphic Design", "UX/UI", "Digital Marketing", "Branding", "Campaign Design"]
+      "list": [
+        "Graphic Design",
+        "UX/UI",
+        "Digital Marketing",
+        "Meta Ads",
+        "Google Analytics",
+        "Figma / Adobe XD",
+        "Illustrator",
+        "Photoshop",
+        "Branding",
+        "Campaign Design",
+        "Community Management",
+        "Copywriting",
+        "Video Production",
+        "Claude Code",
+        "Prompt Engineering"
+      ]
     }
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "Have a project in mind? Let's talk.",
-    "email": "Email",
+    "title": "Let's talk",
+    "subtitle": "Have a project in mind? I'm available for freelance projects and collaborations.",
     "send": "Send message",
     "namePlaceholder": "Your name",
     "emailPlaceholder": "Your email",
     "messagePlaceholder": "Tell me about your project..."
   },
   "footer": {
-    "rights": "Fernanda San German. All rights reserved."
+    "rights": "Fernanda San Germán. All rights reserved."
   }
 }

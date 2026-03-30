@@ -1,0 +1,19 @@
+{
+  "title": "Blumo",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2024",
+  "client": "Blumo",
+  "description": "Visual identity, information architecture, wireframes, and low-code website design with brand guidelines for Blumo.",
+  "coverColor": "#6B8FB5",
+  "tags": ["UX/UI", "Wireframes", "Visual Identity", "Web"],
+  "order": 8,
+  "gridVariant": "wide",
+  "images": [],
+  "process": {
+    "challenge": "Blumo needed a strong visual identity and a website that clearly communicated its value proposition in an engaging way.",
+    "approach": "I developed the information architecture, low and high-fidelity wireframes, and the visual design of the site on a low-code platform — all backed by a brand guidelines document.",
+    "results": "Functional website with a cohesive visual identity and complete brand guidelines to ensure consistency across all communications."
+  }
+}

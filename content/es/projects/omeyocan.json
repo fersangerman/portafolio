@@ -1,0 +1,19 @@
+{
+  "title": "Omeyocan",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2023–2024",
+  "client": "Omeyocan",
+  "description": "Diseño UX/UI completo para Omeyocan: investigación de usuario, wireframes, prototipo de alta fidelidad e interfaz final.",
+  "coverColor": "#C47A5A",
+  "tags": ["UX/UI", "UX Research", "Prototipo", "Figma"],
+  "order": 11,
+  "gridVariant": null,
+  "images": [],
+  "process": {
+    "challenge": "Omeyocan requería un diseño de experiencia de usuario desde cero, con investigación profunda para entender las necesidades de sus usuarios.",
+    "approach": "Llevé a cabo investigación de usuario, definí flujos e información arquitectónica, desarrollé wireframes de baja y alta fidelidad y entregué prototipo final en Figma.",
+    "results": "Prototipo de alta fidelidad validado con usuarios, listo para desarrollo."
+  }
+}

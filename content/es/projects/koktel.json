@@ -1,0 +1,19 @@
+{
+  "title": "Koktel",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2023–2024",
+  "client": "Koktel",
+  "description": "UX Writing y diseño UI para Koktel. Definición de voz de marca, flujos de usuario y diseño de interfaz.",
+  "coverColor": "#7A5F9E",
+  "tags": ["UX Writing", "UI Design", "Voz de Marca", "Figma"],
+  "order": 10,
+  "gridVariant": null,
+  "images": [],
+  "process": {
+    "challenge": "Koktel necesitaba una voz de marca clara y una interfaz coherente que transmitiera su personalidad de forma consistente en todos los puntos de contacto.",
+    "approach": "Trabajé el UX Writing definiendo la voz, el tono y los patrones de lenguaje. Diseñé los flujos de usuario y la interfaz visual asegurando coherencia entre texto y diseño.",
+    "results": "Sistema de UX Writing documentado e interfaz UI implementada con identidad verbal y visual alineadas."
+  }
+}

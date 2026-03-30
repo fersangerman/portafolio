@@ -12,32 +12,46 @@
   },
   "portfolio": {
     "title": "Portafolio",
-    "subtitle": "Una selección de proyectos de diseño, UX/UI y marketing.",
+    "subtitle": "Una selección de proyectos de diseño gráfico, UX/UI y marketing digital.",
     "emptyState": "Proyectos próximamente."
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Lo que puedo hacer por ti y tu marca.",
-    "emptyState": "Servicios próximamente."
+    "subtitle": "Diseño y estrategia para marcas que quieren comunicar mejor."
   },
   "about": {
     "title": "Sobre mí",
-    "bio": "Soy Fernanda San German, diseñadora gráfica con experiencia en UX/UI y marketing digital. Creo experiencias visuales que conectan marcas con personas.",
+    "bio": "Soy una profesional con perfil híbrido en marketing digital y diseño gráfico/UX-UI, con más de 6 años de experiencia gestionando campañas digitales, analizando KPIs, administrando presupuestos y creando contenido visual. Me apasiona construir identidades visuales sólidas y desarrollar estrategias digitales con impacto real. También me he adentrado en el uso de herramientas de IA como Claude Code, integrándolas de forma natural en mi flujo de trabajo para ser más ágil y creativa en cada proyecto.",
     "skills": {
       "title": "Habilidades",
-      "list": ["Diseño Gráfico", "UX/UI", "Marketing Digital", "Branding", "Diseño de Campañas"]
+      "list": [
+        "Diseño Gráfico",
+        "UX/UI",
+        "Marketing Digital",
+        "Meta Ads",
+        "Google Analytics",
+        "Figma / Adobe XD",
+        "Illustrator",
+        "Photoshop",
+        "Branding",
+        "Diseño de Campañas",
+        "Community Management",
+        "Copywriting",
+        "Producción de Video",
+        "Claude Code",
+        "Prompt Engineering"
+      ]
     }
   },
   "contact": {
-    "title": "Contacto",
-    "subtitle": "¿Tienes un proyecto en mente? Hablemos.",
-    "email": "Correo",
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente? Estoy disponible para freelance y colaboraciones.",
     "send": "Enviar mensaje",
     "namePlaceholder": "Tu nombre",
     "emailPlaceholder": "Tu correo",
     "messagePlaceholder": "Cuéntame sobre tu proyecto..."
   },
   "footer": {
-    "rights": "Fernanda San German. Todos los derechos reservados."
+    "rights": "Fernanda San Germán. Todos los derechos reservados."
   }
 }

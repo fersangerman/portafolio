@@ -1,0 +1,19 @@
+{
+  "title": "Electronica Eltec",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2023–2024",
+  "client": "Electronica Eltec",
+  "description": "Rediseño de sitio web, wireframes, manual de identidad y catálogo de productos para Electronica Eltec.",
+  "coverColor": "#5A6E7F",
+  "tags": ["UX/UI", "Rediseño Web", "Wireframes", "Catálogo"],
+  "order": 9,
+  "gridVariant": null,
+  "images": [],
+  "process": {
+    "challenge": "El sitio web existente era difícil de navegar y no reflejaba la calidad de sus productos. Además carecían de un sistema de identidad visual consistente.",
+    "approach": "Realicé un diagnóstico del sitio actual, redefiní la arquitectura de información, diseñé wireframes y el nuevo sistema visual. También desarrollé un catálogo de productos y manual de identidad.",
+    "results": "Nuevo sitio web con mejor usabilidad, identidad visual renovada y catálogo de productos profesional."
+  }
+}

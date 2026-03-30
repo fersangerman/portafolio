@@ -1,0 +1,19 @@
+{
+  "title": "Electronica Eltec",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2023–2024",
+  "client": "Electronica Eltec",
+  "description": "Website redesign, wireframes, brand guidelines, and product catalog for Electronica Eltec.",
+  "coverColor": "#5A6E7F",
+  "tags": ["UX/UI", "Web Redesign", "Wireframes", "Catalog"],
+  "order": 9,
+  "gridVariant": null,
+  "images": [],
+  "process": {
+    "challenge": "The existing website was hard to navigate and didn't reflect the quality of their products. They also lacked a consistent visual identity system.",
+    "approach": "I audited the current site, redefined the information architecture, designed wireframes, and built the new visual system — plus a product catalog and brand guidelines.",
+    "results": "New website with improved usability, refreshed visual identity, and a professional product catalog."
+  }
+}

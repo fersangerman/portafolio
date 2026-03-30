@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function About() {
-  const t = useTranslations("about");
+export default async function About() {
+  const t = await getTranslations("about");
   const skills: string[] = t.raw("skills.list");
 
   return (

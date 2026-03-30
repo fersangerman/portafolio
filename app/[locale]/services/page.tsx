@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function Services() {
-  const t = useTranslations("services");
+export default async function Services() {
+  const t = await getTranslations("services");
 
   return (
     <section className="px-6 md:px-12 lg:px-24 py-20">
