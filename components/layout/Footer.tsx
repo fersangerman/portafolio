@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -8,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="px-6 md:px-12 py-10 border-t border-border">
       <div className="flex flex-col md:flex-row items-center justify-between gap-3">
-        <Logo width={110} className="opacity-50" />
+        <span className="text-sm font-semibold text-ink">Fernanda San German</span>
         <p className="text-sm text-ink-light">
           © {year} {t("rights")}
         </p>

@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import Logo from "@/components/ui/Logo";
-
 export default function Header() {
   const t = useTranslations("nav");
   const locale = useLocale();
@@ -22,10 +20,10 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-5 flex items-center justify-between bg-cream/90 backdrop-blur-sm border-b border-border">
       <Link
         href={`/${locale}`}
-        className="opacity-100 hover:opacity-70 transition-opacity duration-200"
+        className="text-ink font-semibold hover:opacity-70 transition-opacity duration-200"
         aria-label="Fernanda San German — Home"
       >
-        <Logo width={160} />
+        Fernanda San German
       </Link>
 
       <nav className="flex items-center gap-7 text-sm">
