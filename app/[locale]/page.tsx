@@ -1,39 +1,44 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import Link from "next/link";
+import { readdirSync, readFileSync } from "fs";
+import path from "path";
 import ProjectCard, { type Project } from "@/components/ui/ProjectCard";
 import ServiceCard from "@/components/ui/ServiceCard";
 
-const placeholderProjects: Project[] = [
-  {
-    slug: "placeholder-1", categoryKey: "graphic",
-    title: "Identidad de marca — Ejemplo",
-    category: "Diseño Gráfico",
-    description: "Desarrollo de identidad visual completa incluyendo logotipo, paleta de color y guía de marca.",
-    tags: ["Branding", "Identidad Visual"],
-    coverColor: "#DDD5F0",
-  },
-  {
-    slug: "placeholder-2", categoryKey: "uxui",
-    title: "Rediseño UX — App móvil",
-    category: "UX/UI",
-    description: "Investigación de usuario, wireframes y prototipo de alta fidelidad para aplicación móvil.",
-    tags: ["UX Research", "Prototipo", "Figma"],
-    coverColor: "#D5E8F0",
-  },
-  {
-    slug: "placeholder-3", categoryKey: "marketing",
-    title: "Campaña Digital — Redes sociales",
-    category: "Marketing Digital",
-    description: "Estrategia y diseño de piezas visuales para campaña en redes sociales.",
-    tags: ["Social Media", "Diseño", "Estrategia"],
-    coverColor: "#F0EDE8",
-  },
-];
+function readProjects(locale: string): Project[] {
+  const dir = path.join(process.cwd(), "content", locale, "projects");
+  let files: string[];
+  try {
+    files = readdirSync(dir).filter((f) => f.endsWith(".json"));
+  } catch {
+    return [];
+  }
+  const raw = files.map((file) => {
+    const data = JSON.parse(readFileSync(path.join(dir, file), "utf-8"));
+    return { slug: file.replace(".json", ""), ...data };
+  });
+  raw.sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+  return raw.map((data) => ({
+    slug: data.slug,
+    title: data.title,
+    category: data.category,
+    categoryKey: data.categoryKey,
+    description: data.description,
+    tags: data.tags ?? [],
+    coverColor: data.coverColor,
+    coverImage: data.coverImage,
+    gridVariant: data.gridVariant ?? null,
+    year: data.year,
+    client: data.client,
+  }));
+}
 
 export default async function Home() {
   const t = await getTranslations("home");
   const st = await getTranslations("services");
   const locale = await getLocale();
+
+  const featuredProjects = readProjects(locale).slice(0, 3);
 
   const services = [
     {
@@ -109,7 +114,7 @@ export default async function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {placeholderProjects.map((project) => (
+          {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
