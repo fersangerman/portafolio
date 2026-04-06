@@ -1,22 +1,17 @@
 import { notFound } from "next/navigation";
-import { readFileSync } from "fs";
+import { readdirSync, readFileSync } from "fs";
 import path from "path";
 import Image from "next/image";
 import Link from "next/link";
+import OverlapGallery, { type GalleryImage } from "@/components/ui/OverlapGallery";
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
 }
 
-interface ImageItem {
-  src: string;
-  alt: string;
-  size?: "large" | "small" | "full";
-}
-
 interface ClientGroup {
   name: string;
-  images: ImageItem[];
+  images: GalleryImage[];
 }
 
 interface ProcessSection {
@@ -36,9 +31,51 @@ interface ProjectData {
   coverColor?: string;
   coverImage?: string;
   tags: string[];
-  images: ImageItem[];
+  images: GalleryImage[];
   clients?: ClientGroup[];
   process?: ProcessSection | null;
+  order?: number;
+}
+
+interface NextProject {
+  slug: string;
+  title: string;
+  category: string;
+  year: string;
+  coverColor?: string;
+  coverImage?: string;
+}
+
+function readAllProjects(locale: string): Array<ProjectData & { slug: string }> {
+  const dir = path.join(process.cwd(), "content", locale, "projects");
+  let files: string[];
+  try {
+    files = readdirSync(dir).filter((f) => f.endsWith(".json"));
+  } catch {
+    return [];
+  }
+  const projects = files.map((file) => {
+    const data = JSON.parse(readFileSync(path.join(dir, file), "utf-8"));
+    return { slug: file.replace(".json", ""), ...data } as ProjectData & { slug: string };
+  });
+  return projects.sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+}
+
+function getNextProject(
+  allProjects: Array<ProjectData & { slug: string }>,
+  currentSlug: string
+): NextProject | null {
+  const idx = allProjects.findIndex((p) => p.slug === currentSlug);
+  if (idx === -1) return null;
+  const next = allProjects[(idx + 1) % allProjects.length];
+  return {
+    slug: next.slug,
+    title: next.title,
+    category: next.category,
+    year: next.year,
+    coverColor: next.coverColor,
+    coverImage: next.coverImage,
+  };
 }
 
 export default async function CaseStudy({ params }: Props) {
@@ -59,72 +96,84 @@ export default async function CaseStudy({ params }: Props) {
     notFound();
   }
 
-  const backLabel = locale === "es" ? "← Portafolio" : "← Portfolio";
+  const allProjects = readAllProjects(locale);
+  const nextProject = getNextProject(allProjects, slug);
+  const isEs = locale === "es";
 
   return (
-    <article className="pb-24">
-      {/* Hero */}
-      <div
-        className="w-full h-[50vh] md:h-[60vh] flex items-end"
-        style={{ backgroundColor: project.coverColor ?? "#E8E5E1" }}
-      >
-        {project.coverImage && (
+    <article className="pb-0">
+
+      {/* ── Hero: imagen limpia, sin texto encima ── */}
+      {project.coverImage ? (
+        <div className="relative w-full h-[65vh]">
           <Image
             src={project.coverImage}
             alt={project.title}
             fill
             className="object-cover"
+            priority
           />
-        )}
-      </div>
+        </div>
+      ) : (
+        <div
+          className="w-full h-[40vh]"
+          style={{ backgroundColor: project.coverColor ?? "#E8E5E1" }}
+        />
+      )}
 
-      {/* Header */}
+      {/* ── Info del proyecto ── */}
       <div className="px-6 md:px-12 lg:px-24 py-12 border-b border-border">
         <Link
           href={`/${locale}/portfolio`}
-          className="text-sm text-ink-muted hover:text-ink transition-colors font-medium mb-8 inline-block"
+          className="text-sm text-ink-muted hover:text-ink transition-colors font-medium mb-10 inline-block"
         >
-          {backLabel}
+          {isEs ? "← Portafolio" : "← Portfolio"}
         </Link>
 
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
-          <div className="max-w-2xl">
-            <p className="text-xs text-ink-light uppercase tracking-widest font-medium mb-3">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+          <div>
+            <p className="text-xs text-ink-light uppercase tracking-widest font-medium mb-2">
               {project.category} · {project.year}
             </p>
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-5 text-ink">
+            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-ink">
               {project.title}
             </h1>
-            <p className="text-ink-muted text-lg leading-relaxed">
-              {project.description}
-            </p>
           </div>
 
-          {/* Tags sidebar */}
-          <div className="flex flex-wrap md:flex-col gap-2 md:min-w-[160px]">
-            {project.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-xs bg-violet-light text-violet-dark px-3 py-1 rounded-full font-medium w-fit"
-              >
-                {tag}
-              </span>
-            ))}
+          <div className="max-w-xl">
+            <p className="text-ink-muted text-base leading-relaxed mb-6">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs bg-violet-light text-violet-dark px-3 py-1 rounded-full font-medium"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Content */}
+      {/* ── Contenido ── */}
       {project.caseType === "full" && project.process ? (
         <FullCaseStudy project={project} locale={locale} />
       ) : (
         <GalleryCase project={project} locale={locale} />
       )}
+
+      {/* ── Siguiente Proyecto ── */}
+      {nextProject && (
+        <NextProjectSection next={nextProject} locale={locale} isEs={isEs} />
+      )}
     </article>
   );
 }
 
-/* ── Gallery mode (Diseño Gráfico / Branding) ── */
+/* ── Gallery mode ── */
 function GalleryCase({
   project,
   locale: _locale,
@@ -146,25 +195,21 @@ function GalleryCase({
   }
 
   return (
-    <div className="px-6 md:px-12 lg:px-24 py-16">
-      {/* Main images with overlapping layout */}
+    <div className="mt-2">
       {hasImages && <OverlapGallery images={project.images} />}
 
-      {/* Client groups for Archipiélago Clientes */}
       {hasClientGroups &&
         project.clients!.map((clientGroup) => (
-          <div key={clientGroup.name} className="mb-16">
-            <h2 className="text-xl font-semibold text-ink mb-8">
+          <div key={clientGroup.name} className="mt-16">
+            <h2 className="text-xl font-semibold text-ink mb-6 px-6 md:px-12 lg:px-24">
               {clientGroup.name}
             </h2>
             {clientGroup.images.length > 0 ? (
               <OverlapGallery images={clientGroup.images} />
             ) : (
-              <div className="rounded-2xl bg-cream-dark h-48 flex items-center justify-center">
+              <div className="mx-6 md:mx-12 lg:mx-24 rounded-xl bg-cream-dark h-48 flex items-center justify-center">
                 <p className="text-ink-light text-sm">
-                  {_locale === "es"
-                    ? "Imágenes próximamente."
-                    : "Images coming soon."}
+                  {_locale === "es" ? "Imágenes próximamente." : "Images coming soon."}
                 </p>
               </div>
             )}
@@ -187,7 +232,6 @@ function FullCaseStudy({
 
   return (
     <div className="px-6 md:px-12 lg:px-24 py-16">
-      {/* Process sections */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
         <div>
           <p className="text-xs text-violet uppercase tracking-widest font-semibold mb-3">
@@ -209,11 +253,10 @@ function FullCaseStudy({
         </div>
       </div>
 
-      {/* Gallery with overlap effect */}
       {project.images.length > 0 ? (
         <OverlapGallery images={project.images} />
       ) : (
-        <div className="rounded-2xl bg-cream-dark h-64 flex items-center justify-center">
+        <div className="rounded-xl bg-cream-dark h-64 flex items-center justify-center">
           <p className="text-ink-light text-sm">
             {isEs ? "Imágenes próximamente." : "Images coming soon."}
           </p>
@@ -223,30 +266,55 @@ function FullCaseStudy({
   );
 }
 
-/* ── Overlapping gallery ── */
-function OverlapGallery({ images }: { images: ImageItem[] }) {
+/* ── Siguiente Proyecto ── */
+function NextProjectSection({
+  next,
+  locale,
+  isEs,
+}: {
+  next: NextProject;
+  locale: string;
+  isEs: boolean;
+}) {
   return (
-    <div className="relative space-y-[-2rem]">
-      {images.map((img, i) => (
-        <div
-          key={img.src}
-          className={[
-            "relative rounded-2xl overflow-hidden shadow-md",
-            i % 2 === 0 ? "ml-0 mr-8 md:mr-16" : "ml-8 md:ml-16 mr-0",
-            img.size === "large" || img.size === "full"
-              ? "aspect-[16/9]"
-              : "aspect-[4/3]",
-          ].join(" ")}
-          style={{ zIndex: i + 1 }}
-        >
+    <Link
+      href={`/${locale}/portfolio/${next.slug}`}
+      className="group block border-t border-border mt-16"
+    >
+      <div className="relative h-[45vh] overflow-hidden">
+        {next.coverImage ? (
           <Image
-            src={img.src}
-            alt={img.alt}
+            src={next.coverImage}
+            alt={next.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
+        ) : (
+          <div
+            className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
+            style={{ backgroundColor: next.coverColor ?? "#E8E5E1" }}
+          />
+        )}
+        <div className="absolute inset-0 bg-black/25 group-hover:bg-black/15 transition-colors duration-300" />
+        <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-12 lg:px-24 pb-10">
+          <p className="text-xs text-white/60 uppercase tracking-widest font-medium mb-2">
+            {isEs ? "Siguiente proyecto" : "Next project"}
+          </p>
+          <div className="flex items-end justify-between gap-4">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-semibold text-white">
+                {next.title}
+              </h2>
+              <p className="text-sm text-white/70 mt-1">
+                {next.category} · {next.year}
+              </p>
+            </div>
+            <span className="text-white text-2xl translate-x-0 group-hover:translate-x-2 transition-transform duration-300">
+              →
+            </span>
+          </div>
         </div>
-      ))}
-    </div>
+      </div>
+    </Link>
   );
 }

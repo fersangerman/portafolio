@@ -5,10 +5,31 @@
   "caseType": "gallery",
   "year": "2023",
   "client": "Oriwa",
-  "description": "Full brand identity: logo, color palette, typography, label and packaging design, social media, and website for Oriwa.",
+  "description": "Full brand identity for Oriwa: logo, color palette, typography, label and packaging design, social media, and website.",
   "coverColor": "#7A9E7E",
+  "coverImage": "",
   "tags": ["Branding", "Packaging", "Visual Identity", "Web"],
   "order": 6,
   "gridVariant": null,
-  "images": []
+  "images": [
+    { "src": "/images/oriwa/oriwa-cover.jpg", "alt": "Oriwa — brand identity",        "size": "full"  },
+    { "src": "/images/oriwa/oriwa-logo.png",  "alt": "Oriwa — logotype",              "size": "full"  },
+    { "src": "/images/oriwa/oriwa-01.png",    "alt": "Oriwa — visual identity",       "size": "half"  },
+    { "src": "/images/oriwa/oriwa-02.png",    "alt": "Oriwa — color palette",         "size": "half"  },
+    { "src": "/images/oriwa/oriwa-03.png",    "alt": "Oriwa — packaging mockup",      "size": "large" },
+    { "src": "/images/oriwa/oriwa-04.png",    "alt": "Oriwa — label mockup",          "size": "small" },
+    { "src": "/images/oriwa/oriwa-05.png",    "alt": "Oriwa — detail mockup",         "size": "small" },
+    { "src": "/images/oriwa/oriwa-06.png",    "alt": "Oriwa — application mockup",    "size": "large" },
+    { "src": "/images/oriwa/oriwa-07.png",    "alt": "Oriwa — product mockup",        "size": "full"  },
+    { "src": "/images/oriwa/oriwa-08.png",    "alt": "Oriwa — composition mockup",    "size": "half"  },
+    { "src": "/images/oriwa/oriwa-09.png",    "alt": "Oriwa — set mockup",            "size": "half"  },
+    { "src": "/images/oriwa/oriwa-10.png",    "alt": "Oriwa — packaging mockup",      "size": "large" },
+    { "src": "/images/oriwa/oriwa-11.png",    "alt": "Oriwa — social media mockup",   "size": "small" },
+    { "src": "/images/oriwa/oriwa-12.png",    "alt": "Oriwa — card mockup",           "size": "full"  },
+    { "src": "/images/oriwa/oriwa-13.png",    "alt": "Oriwa — final mockup",          "size": "half"  },
+    { "src": "/images/oriwa/oriwa-14.png",    "alt": "Oriwa — web mockup",            "size": "half"  },
+    { "src": "/images/oriwa/oriwa-15.png",    "alt": "Oriwa — website mockup",        "size": "large" },
+    { "src": "/images/oriwa/oriwa-16.png",    "alt": "Oriwa — closing mockup",        "size": "small" },
+    { "src": "/images/oriwa/oriwa-17.png",    "alt": "Oriwa — collection mockup",     "size": "full"  }
+  ]
 }
