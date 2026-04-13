@@ -7,8 +7,30 @@
   "client": "Archipiélago",
   "description": "Visual identity and graphic material — digital and print — for Radio Bosque, a music festival developed within Archipiélago agency.",
   "coverColor": "#2D4A3E",
+  "coverImage": "/images/radiobosque/rb-00.png",
   "tags": ["Visual Identity", "Festivals", "Print", "Graphic Design"],
   "order": 1,
-  "gridVariant": "featured",
-  "images": []
+  "gridVariant": null,
+  "images": [
+    { "src": "/images/radiobosque/rb-header.png","alt": "Radio Bosque — festival header",         "size": "full", "layout": "panoramic" },
+    { "src": "/images/radiobosque/rb-03.jpg",  "alt": "Radio Bosque — lineup announcement",     "size": "half" },
+    { "src": "/images/radiobosque/rb-21.jpg",  "alt": "Radio Bosque — campaign photo",          "size": "half" },
+    { "src": "/images/radiobosque/rb-02.jpg",  "alt": "Radio Bosque — festival poster",         "size": "full" },
+    { "src": "/images/radiobosque/rb-05.png",  "alt": "Radio Bosque — Underworld",              "size": "half" },
+    { "src": "/images/radiobosque/rb-06.png",  "alt": "Radio Bosque — Hot Chip",                "size": "half" },
+    { "src": "/images/radiobosque/rb-07.png",  "alt": "Radio Bosque — Monolink",                "size": "half" },
+    { "src": "/images/radiobosque/rb-08.png",  "alt": "Radio Bosque — The Blaze",               "size": "half" },
+    { "src": "/images/radiobosque/rb-09.png",  "alt": "Radio Bosque — WhoMadeWho",              "size": "half" },
+    { "src": "/images/radiobosque/rb-10.png",  "alt": "Radio Bosque — Y La Bamba",              "size": "half" },
+    { "src": "/images/radiobosque/rb-11.png",  "alt": "Radio Bosque — Adidas Home of Classics", "size": "half" },
+    { "src": "/images/radiobosque/rb-12.png",  "alt": "Radio Bosque — Pepsi Silent Party",      "size": "half" },
+    { "src": "/images/radiobosque/rb-13.jpg",  "alt": "Radio Bosque — boletos etapa 2",         "size": "full" },
+    { "src": "/images/radiobosque/rb-14.png",  "alt": "Radio Bosque — Bumble Make-up Station",  "size": "small", "aspect": "9/16" },
+    { "src": "/images/radiobosque/rb-15.jpg",  "alt": "Radio Bosque — Victoria Ofrenda",        "size": "small", "aspect": "9/16" },
+    { "src": "/images/radiobosque/rb-16.jpg",  "alt": "Radio Bosque — Día de Muertos",          "size": "small", "aspect": "9/16" },
+    { "src": "/images/radiobosque/rb-17.png",  "alt": "Radio Bosque — razones para ir",         "size": "small", "aspect": "9/16" },
+    { "src": "/images/radiobosque/rb-18.jpg",  "alt": "Radio Bosque — canción del día",         "size": "small", "aspect": "9/16" },
+    { "src": "/images/radiobosque/rb-19.png",  "alt": "Radio Bosque — Mayan Warrior stage",     "size": "small", "aspect": "9/16" },
+    { "src": "/images/radiobosque/rb-04.png",  "alt": "Radio Bosque — stage schedule",          "size": "full" }
+  ]
 }

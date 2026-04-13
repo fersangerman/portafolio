@@ -7,8 +7,17 @@
   "client": "Archipiélago",
   "description": "Graphic materials for Septemberfest, a craft beer festival. Digital and print pieces developed at Archipiélago agency.",
   "coverColor": "#C4913A",
+  "coverImage": "/images/septemberfest/september-00.png",
   "tags": ["Festivals", "Graphic Design", "Print"],
   "order": 2,
   "gridVariant": null,
-  "images": []
+  "images": [
+    { "src": "/images/septemberfest/september-01.jpg", "alt": "Septemberfest — festival banner",         "size": "full", "layout": "panoramic" },
+    { "src": "/images/septemberfest/september-02.jpg", "alt": "Septemberfest — festival illustrations",  "size": "full" },
+    { "src": "/images/septemberfest/september-03.png", "alt": "Septemberfest — 2019 lineup poster",      "size": "half" },
+    { "src": "/images/septemberfest/september-04.jpg", "alt": "Septemberfest — lineup by day",           "size": "half" },
+    { "src": "/images/septemberfest/september-07.jpg", "alt": "Septemberfest — designated driver",       "size": "half" },
+    { "src": "/images/septemberfest/september-06.jpg", "alt": "Septemberfest — 3D logotype",             "size": "half" },
+    { "src": "/images/septemberfest/september-05.jpg", "alt": "Septemberfest — tickets on sale",         "size": "full" }
+  ]
 }

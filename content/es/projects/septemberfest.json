@@ -7,8 +7,17 @@
   "client": "Archipiélago",
   "description": "Material gráfico para Septemberfest, festival de cerveza artesanal. Piezas digitales e impresas desarrolladas en la agencia Archipiélago.",
   "coverColor": "#C4913A",
+  "coverImage": "/images/septemberfest/september-00.png",
   "tags": ["Festivales", "Diseño Gráfico", "Print"],
   "order": 2,
   "gridVariant": null,
-  "images": []
+  "images": [
+    { "src": "/images/septemberfest/september-01.jpg", "alt": "Septemberfest — banner del festival",     "size": "full", "layout": "panoramic" },
+    { "src": "/images/septemberfest/september-02.jpg", "alt": "Septemberfest — ilustraciones del festival", "size": "full" },
+    { "src": "/images/septemberfest/september-03.png", "alt": "Septemberfest — cartel lineup 2019",      "size": "half" },
+    { "src": "/images/septemberfest/september-04.jpg", "alt": "Septemberfest — lineup por día",          "size": "half" },
+    { "src": "/images/septemberfest/september-07.jpg", "alt": "Septemberfest — conductor designado",     "size": "half" },
+    { "src": "/images/septemberfest/september-06.jpg", "alt": "Septemberfest — logotipo 3D",             "size": "half" },
+    { "src": "/images/septemberfest/september-05.jpg", "alt": "Septemberfest — boletos ya a la venta",   "size": "full" }
+  ]
 }
