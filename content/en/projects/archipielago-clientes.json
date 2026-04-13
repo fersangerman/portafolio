@@ -7,15 +7,31 @@
   "client": "Archipiélago",
   "description": "Digital and print graphic pieces for multiple clients of Archipiélago agency: Zaranda, Parcela, NFL, Café Paraíso, and Cancino.",
   "coverColor": "#3D3530",
+  "coverImage": "/images/archipielago/archi-00.png",
   "tags": ["Graphic Design", "Agency", "Branding", "Print"],
   "order": 4,
   "gridVariant": null,
-  "clients": [
-    { "name": "Zaranda", "images": [] },
-    { "name": "Parcela", "images": [] },
-    { "name": "NFL", "images": [] },
-    { "name": "Café Paraíso", "images": [] },
-    { "name": "Cancino", "images": [] }
-  ],
-  "images": []
+  "images": [
+    { "src": "/images/archipielago/archi-05.jpg", "alt": "Archipiélago — Superbowl at Parcela",                 "size": "half" },
+    { "src": "/images/archipielago/archi-06.jpg", "alt": "Archipiélago — Game Night at Parcela",                "size": "half" },
+    { "src": "/images/archipielago/archi-07.jpg", "alt": "Archipiélago — Noches al Carbón Parcela",             "size": "half" },
+    { "src": "/images/archipielago/archi-08.jpg", "alt": "Archipiélago — Jueves de Parcela December",           "size": "half" },
+    { "src": "/images/archipielago/archi-09.jpg", "alt": "Archipiélago — La Zaranda logotype",                  "size": "half" },
+    { "src": "/images/archipielago/archi-10.png", "alt": "Archipiélago — La Zaranda Sábados de Gloria",         "size": "half" },
+    { "src": "/images/archipielago/archi-11.png", "alt": "Archipiélago — Havana Nights flyer",                  "size": "half" },
+    { "src": "/images/archipielago/archi-12.png", "alt": "Archipiélago — Havana Nights cocktail menu",          "size": "half" },
+    { "src": "/images/archipielago/archi-13.png", "alt": "Archipiélago — Cancino cocktails 2x1",                "size": "half" },
+    { "src": "/images/archipielago/archi-14.jpg", "alt": "Archipiélago — Cancino breakfast delivery",           "size": "half" },
+    { "src": "/images/archipielago/archi-16.jpg", "alt": "Archipiélago — Cancino starters and mains menu",      "size": "half" },
+    { "src": "/images/archipielago/archi-17.jpg", "alt": "Archipiélago — Cancino desserts and drinks menu",     "size": "half" },
+    { "src": "/images/archipielago/archi-18.jpg", "alt": "Archipiélago — La Zaranda food menu",                 "size": "half" },
+    { "src": "/images/archipielago/archi-19.jpg", "alt": "Archipiélago — La Zaranda drinks menu",               "size": "half" },
+    { "src": "/images/archipielago/archi-15.png", "alt": "Archipiélago — Cancino Jazz Nights",                  "size": "half" },
+    { "src": "/images/archipielago/archi-20.jpg", "alt": "Archipiélago — Café Paraíso March 15",                "size": "half" },
+    { "src": "/images/archipielago/archi-21.jpg", "alt": "Archipiélago — Café Paraíso February 2",              "size": "half" },
+    { "src": "/images/archipielago/archi-01.jpg", "alt": "Archipiélago — Bud Light NFL limited edition cups",   "size": "full" },
+    { "src": "/images/archipielago/archi-02.jpg", "alt": "Archipiélago — Bud Light NFL WiFi landing",           "size": "full" },
+    { "src": "/images/archipielago/archi-03.png", "alt": "Archipiélago — Bud Light NFL cup $150",               "size": "half" },
+    { "src": "/images/archipielago/archi-04.png", "alt": "Archipiélago — Bud Light NFL 3 brands",               "size": "half" }
+  ]
 }

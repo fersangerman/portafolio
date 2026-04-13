@@ -7,15 +7,31 @@
   "client": "Archipiélago",
   "description": "Piezas gráficas digitales e impresas para múltiples clientes de la agencia Archipiélago: Zaranda, Parcela, NFL, Café Paraíso y Cancino.",
   "coverColor": "#3D3530",
+  "coverImage": "/images/archipielago/archi-00.png",
   "tags": ["Diseño Gráfico", "Agencia", "Branding", "Print"],
   "order": 4,
   "gridVariant": null,
-  "clients": [
-    { "name": "Zaranda", "images": [] },
-    { "name": "Parcela", "images": [] },
-    { "name": "NFL", "images": [] },
-    { "name": "Café Paraíso", "images": [] },
-    { "name": "Cancino", "images": [] }
-  ],
-  "images": []
+  "images": [
+    { "src": "/images/archipielago/archi-05.jpg", "alt": "Archipiélago — Superbowl en Parcela",                 "size": "half" },
+    { "src": "/images/archipielago/archi-06.jpg", "alt": "Archipiélago — Game Night en Parcela",                "size": "half" },
+    { "src": "/images/archipielago/archi-07.jpg", "alt": "Archipiélago — Noches al Carbón Parcela",             "size": "half" },
+    { "src": "/images/archipielago/archi-08.jpg", "alt": "Archipiélago — Jueves de Parcela diciembre",          "size": "half" },
+    { "src": "/images/archipielago/archi-09.jpg", "alt": "Archipiélago — La Zaranda logotipo",                  "size": "half" },
+    { "src": "/images/archipielago/archi-10.png", "alt": "Archipiélago — La Zaranda Sábados de Gloria",         "size": "half" },
+    { "src": "/images/archipielago/archi-11.png", "alt": "Archipiélago — Havana Nights flyer",                  "size": "half" },
+    { "src": "/images/archipielago/archi-12.png", "alt": "Archipiélago — Havana Nights menú cocteles",          "size": "half" },
+    { "src": "/images/archipielago/archi-13.png", "alt": "Archipiélago — Cancino cocteles 2x1",                 "size": "half" },
+    { "src": "/images/archipielago/archi-14.jpg", "alt": "Archipiélago — Cancino desayunos a domicilio",        "size": "half" },
+    { "src": "/images/archipielago/archi-16.jpg", "alt": "Archipiélago — Cancino menú entradas y platos",       "size": "half" },
+    { "src": "/images/archipielago/archi-17.jpg", "alt": "Archipiélago — Cancino menú postres y bebidas",       "size": "half" },
+    { "src": "/images/archipielago/archi-18.jpg", "alt": "Archipiélago — La Zaranda menú comida",               "size": "half" },
+    { "src": "/images/archipielago/archi-19.jpg", "alt": "Archipiélago — La Zaranda menú bebida",               "size": "half" },
+    { "src": "/images/archipielago/archi-15.png", "alt": "Archipiélago — Cancino Noches de Jazz",               "size": "half" },
+    { "src": "/images/archipielago/archi-20.jpg", "alt": "Archipiélago — Café Paraíso 15 marzo",                "size": "half" },
+    { "src": "/images/archipielago/archi-21.jpg", "alt": "Archipiélago — Café Paraíso 2 febrero",               "size": "half" },
+    { "src": "/images/archipielago/archi-01.jpg", "alt": "Archipiélago — Bud Light NFL vasos edición limitada", "size": "full" },
+    { "src": "/images/archipielago/archi-02.jpg", "alt": "Archipiélago — Bud Light NFL landing WiFi",           "size": "full" },
+    { "src": "/images/archipielago/archi-03.png", "alt": "Archipiélago — Bud Light NFL vaso $150",              "size": "half" },
+    { "src": "/images/archipielago/archi-04.png", "alt": "Archipiélago — Bud Light NFL 3 marcas",               "size": "half" }
+  ]
 }
