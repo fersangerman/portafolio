@@ -5,15 +5,91 @@
   "caseType": "full",
   "year": "2023–2024",
   "client": "Omeyocan",
-  "description": "Diseño UX/UI completo para Omeyocan: investigación de usuario, wireframes, prototipo de alta fidelidad e interfaz final.",
+  "description": "Rediseño UX/UI del sitio web de Omeyocan: un refugio animal en CDMX que necesitaba una plataforma digital que conectara a los animales con familias amorosas.",
+  "coverImage": "/images/omeyocan/hero.png",
   "coverColor": "#C47A5A",
-  "tags": ["UX/UI", "UX Research", "Prototipo", "Figma"],
+  "tags": ["UX/UI", "UX Research", "Rediseño Web", "Figma"],
   "order": 11,
   "gridVariant": null,
   "images": [],
-  "process": {
-    "challenge": "Omeyocan requería un diseño de experiencia de usuario desde cero, con investigación profunda para entender las necesidades de sus usuarios.",
-    "approach": "Llevé a cabo investigación de usuario, definí flujos e información arquitectónica, desarrollé wireframes de baja y alta fidelidad y entregué prototipo final en Figma.",
-    "results": "Prototipo de alta fidelidad validado con usuarios, listo para desarrollo."
-  }
+  "sections": [
+    {
+      "id": "overview",
+      "title": "El proyecto",
+      "body": "Omeyocan, un refugio comprometido con el bienestar animal en la Ciudad de México, requería una plataforma en línea que refleje su dedicación y pasión por conectar animales necesitados con familias amorosas. El rediseño de su sitio web buscaba mejorar la funcionalidad, la accesibilidad y la comunicación emocional con el público, permitiendo una interacción más fluida y efectiva para adoptantes y voluntarios por igual.\n\nEn este proceso, nos apoyamos en la metodología de los 5 elementos de Garrett para garantizar una experiencia de usuario coherente y gratificante que facilitara el camino de los visitantes desde la empatía hacia la acción.",
+      "images": [
+        {
+          "src": "/images/omeyocan/ELEMTOSJAMESGARRET.jpg",
+          "alt": "Metodología de los 5 elementos de James Garrett",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "title": "Estrategia",
+      "body": "Al abordar la transformación digital del sitio web de Omeyocan, establecimos una estrategia que involucró tanto los objetivos de los usuarios como los del refugio. Los usuarios finales buscaban una plataforma que ofreciera claridad en el proceso de adopción y voluntariado, permitiéndoles conectar fácilmente con los animales. Paralelamente, Omeyocan necesitaba transmitir su misión y fomentar una comunidad de apoyo que se materializara en adopciones y contribuciones.\n\nNuestros pasos estratégicos involucraron identificar los deseos de los usuarios a través de encuestas y entrevistas, al mismo tiempo que alineábamos las metas de la organización con las necesidades detectadas. La integración de estos objetivos fue el motor que impulsó el rediseño: crear un ecosistema digital que facilitara el encuentro entre animales en espera y corazones dispuestos a acogerlos."
+    },
+    {
+      "id": "analysis",
+      "title": "Análisis y propuestas de mejora",
+      "body": "Desde la primera inspección de la página web existente de Omeyocan, identificamos áreas clave que requerían atención inmediata para realzar la experiencia del usuario y la imagen de la organización. Los puntos críticos incluían la calidad de las imágenes —varias fotografías de baja resolución mermaban la percepción de profesionalismo—, problemas de contraste y legibilidad del texto, y la ausencia de botones de llamada a la acción claros y visibles.\n\nTambién observamos secciones irrelevantes que no contribuían a la misión central del refugio, dispersando la atención del usuario y diluyendo el mensaje clave. La solución propuesta incluía un rediseño de la interfaz para mejorar la jerarquía visual, aumentar el contraste y la legibilidad del texto, e introducir botones CTA prominentes que guiaran a los usuarios hacia acciones de adopción, donación y voluntariado.",
+      "images": [
+        {
+          "src": "/images/omeyocan/puntosdedolor.jpg",
+          "alt": "Puntos de dolor identificados en el sitio actual de Omeyocan",
+          "size": "half"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "Investigación de usuario",
+      "body": "La comprensión profunda de la experiencia de los usuarios con la página web actual de Omeyocan fue esencial para el rediseño. Implementamos encuestas exhaustivas que revelaron resultados contundentes: el 90% de los usuarios sentía que la plataforma no era fácil de usar, el 70% consideraba que no satisfacía completamente sus necesidades, y el 72% no sentía ninguna emoción al interactuar con el sitio —un dato alarmante para una organización cuyo trabajo se basa en la conexión emocional.\n\nEstos resultados evidenciaron la necesidad de un sitio que no solo fuera funcional y fácil de navegar, sino que también resonara con los usuarios a nivel emocional. La investigación señaló la importancia de imágenes de alta calidad para generar confianza y una estructura de contenido que facilitara la interacción natural y significativa.",
+      "images": [
+        {
+          "src": "/images/omeyocan/OT13191.jpg",
+          "alt": "Resultados de investigación de usuario — encuestas y hallazgos",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Estructura",
+      "body": "La estructura del rediseño se centró en crear un entorno digital claro y fácil de navegar, reflejando la jerarquía de contenido que resonara con los usuarios y apoyara los objetivos de Omeyocan.\n\nAl analizar la arquitectura de información existente, identificamos varias áreas que generaban obstáculos: la falta de un formulario de contacto directo, la ausencia de una sección dedicada a perros en adopción (el sitio redirigía a Facebook), secciones irrelevantes que confundían al usuario, y un proceso de registro para voluntarios engorroso y poco claro.\n\nPara resolver esto, realizamos sesiones de card sorting con usuarios actuales y potenciales, y proseguimos con pruebas de tree testing para validar la eficacia de la nueva navegación. El resultado fue una arquitectura de información reconstruida desde la lógica del usuario.",
+      "images": [
+        {
+          "src": "/images/omeyocan/Site Map Team Whiteboard in Pink Black Friendly Professional Style.png",
+          "alt": "Nueva arquitectura de información — sitemap rediseñado",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "La solución",
+      "carousel": true,
+      "body": "Durante la renovación de la superficie del sitio web, nos enfocamos en crear una experiencia visual que resonara emocionalmente con los usuarios. El uso de imágenes conmovedoras de los perros y una paleta de colores cálidos transformó el espacio digital en un reflejo de la misión y el espíritu del refugio. Las interfaces se simplificaron para una navegación intuitiva, con botones claros y acciones de usuario que facilitan la interacción y el acceso a la información.",
+      "images": [
+        { "src": "/images/omeyocan/mockup3.jpg", "alt": "Mockup del sitio rediseñado de Omeyocan", "size": "full" },
+        { "src": "/images/omeyocan/mockup1.jpg", "alt": "Mockup del sitio rediseñado de Omeyocan", "size": "full" },
+        { "src": "/images/omeyocan/mockup2.jpg", "alt": "Mockup del sitio rediseñado de Omeyocan", "size": "full" },
+        { "src": "/images/omeyocan/OT11BI1.jpg", "alt": "Mockup del sitio rediseñado de Omeyocan", "size": "full" }
+      ],
+      "figmaEmbed": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/rsYR8IRBjWsrPOGghlMm6S/Omeyocan?node-id=1-2&p=f&viewport=276%2C386%2C0.05&t=ZE8Rt8RJ87j5EWVk-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=26%3A3646&page-id=0%3A1"
+    },
+    {
+      "id": "reflection",
+      "title": "Resultados",
+      "body": "El resultado fue un entorno en línea que refleja la dedicación de Omeyocan hacia el cuidado y la adopción de perros, y que invita a los usuarios a explorar, participar y, lo más importante, a unirse a la noble causa del refugio. Con el rediseño, la página web se convirtió no solo en un portal de información, sino en una extensión del corazón y el alma de Omeyocan.\n\nEl rediseño resultó en un sitio web intuitivo y estéticamente agradable que fomenta la interacción y promueve la misión del refugio. Con estos cambios, el sitio no solo se alinea mejor con la identidad de Omeyocan, sino que también invita a la acción directa —adopción y voluntariado— a través de un entorno en línea más accesible y atractivo.",
+      "images": [
+        {
+          "src": "/images/omeyocan/Showreel Web gallery remix.mp4",
+          "alt": "Showreel del sitio web de Omeyocan",
+          "size": "full"
+        }
+      ]
+    }
+  ]
 }

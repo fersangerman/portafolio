@@ -5,15 +5,91 @@
   "caseType": "full",
   "year": "2023–2024",
   "client": "Omeyocan",
-  "description": "Full UX/UI design for Omeyocan: user research, wireframes, high-fidelity prototype, and final interface.",
+  "description": "UX/UI redesign of Omeyocan's website: an animal shelter in Mexico City that needed a digital platform to connect animals with loving families.",
+  "coverImage": "/images/omeyocan/hero.png",
   "coverColor": "#C47A5A",
-  "tags": ["UX/UI", "UX Research", "Prototype", "Figma"],
+  "tags": ["UX/UI", "UX Research", "Web Redesign", "Figma"],
   "order": 11,
   "gridVariant": null,
   "images": [],
-  "process": {
-    "challenge": "Omeyocan required a user experience design from scratch, with deep research to understand the needs of its users.",
-    "approach": "I conducted user research, defined flows and information architecture, developed low and high-fidelity wireframes, and delivered a final prototype in Figma.",
-    "results": "High-fidelity prototype validated with users, ready for development."
-  }
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The project",
+      "body": "Omeyocan, an animal welfare shelter in Mexico City, needed an online platform that reflected its dedication and passion for connecting animals in need with loving families. The website redesign aimed to improve functionality, accessibility, and emotional communication with the public, enabling a smoother and more effective interaction for both adopters and volunteers.\n\nThroughout this process, we relied on Garrett's 5 Elements methodology to ensure a coherent and rewarding user experience that guided visitors from empathy to action.",
+      "images": [
+        {
+          "src": "/images/omeyocan/ELEMTOSJAMESGARRET.jpg",
+          "alt": "James Garrett's 5 Elements methodology diagram",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "title": "Strategy",
+      "body": "In approaching the digital transformation of Omeyocan's website, we established a strategy that addressed both user and shelter objectives. End users sought a platform offering clarity in the adoption and volunteering process, allowing them to easily connect with animals. At the same time, Omeyocan needed to communicate its mission and foster a support community that would translate into adoptions and contributions.\n\nOur strategic steps involved identifying user needs through surveys and interviews, while aligning organizational goals with the detected needs. The integration of these objectives was the driving force behind the redesign: creating a digital ecosystem that would facilitate the meeting between animals waiting for a home and hearts ready to welcome them."
+    },
+    {
+      "id": "analysis",
+      "title": "Analysis & improvement proposals",
+      "body": "From the first inspection of Omeyocan's existing website, we identified key areas requiring immediate attention to enhance the user experience and the organization's image. Critical pain points included image quality — several low-resolution photos undermined the shelter's perceived professionalism — text contrast and readability issues, and the absence of clear, visible calls to action.\n\nWe also observed irrelevant sections that didn't contribute to the shelter's core mission, distracting users and diluting the key message. The proposed solution included an interface redesign to improve visual hierarchy, increase text contrast and readability, and introduce prominent CTA buttons guiding users toward adoption, donation, and volunteering actions.",
+      "images": [
+        {
+          "src": "/images/omeyocan/puntosdedolor.jpg",
+          "alt": "Pain points identified in Omeyocan's existing website",
+          "size": "half"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "title": "User research",
+      "body": "A deep understanding of how users experienced Omeyocan's existing website was essential for the redesign. We conducted comprehensive surveys that revealed striking results: 90% of users felt the platform was not easy to use, 70% felt it didn't fully meet their needs, and 72% felt no emotional connection when interacting with the site — an alarming finding for an organization whose work is rooted in emotional connection.\n\nThese results highlighted the need for a site that was not only functional and easy to navigate, but also resonated with users on an emotional level. The research underscored the importance of high-quality imagery for building trust, and a content structure that would enable natural and meaningful interaction.",
+      "images": [
+        {
+          "src": "/images/omeyocan/OT13191.jpg",
+          "alt": "User research results — surveys and key findings",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Structure",
+      "body": "The redesign's structure focused on creating a clear and easy-to-navigate digital environment, reflecting a content hierarchy that resonated with users and supported Omeyocan's objectives.\n\nWhen analyzing the existing information architecture, we identified several friction points: the lack of a direct contact form, the absence of a dedicated section for dogs available for adoption (the site redirected users to Facebook), irrelevant sections that confused users, and a cumbersome volunteer registration process that required sending an email and waiting for a reply.\n\nTo address this, we ran card sorting sessions with current and potential users, followed by tree testing to validate the effectiveness of the new navigation. The result was a fully reconstructed information architecture built around user logic.",
+      "images": [
+        {
+          "src": "/images/omeyocan/Site Map Team Whiteboard in Pink Black Friendly Professional Style.png",
+          "alt": "New information architecture — redesigned sitemap",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "The solution",
+      "carousel": true,
+      "body": "During the surface redesign, we focused on creating a visual experience that would resonate emotionally with users. The use of moving images of the dogs and a warm color palette transformed the digital space into a reflection of the shelter's mission and spirit. Interfaces were simplified for intuitive navigation, with clear buttons and user actions that facilitate interaction and access to information.",
+      "images": [
+        { "src": "/images/omeyocan/mockup3.jpg", "alt": "Omeyocan redesigned website mockup", "size": "full" },
+        { "src": "/images/omeyocan/mockup1.jpg", "alt": "Omeyocan redesigned website mockup", "size": "full" },
+        { "src": "/images/omeyocan/mockup2.jpg", "alt": "Omeyocan redesigned website mockup", "size": "full" },
+        { "src": "/images/omeyocan/OT11BI1.jpg", "alt": "Omeyocan redesigned website mockup", "size": "full" }
+      ],
+      "figmaEmbed": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/rsYR8IRBjWsrPOGghlMm6S/Omeyocan?node-id=1-2&p=f&viewport=276%2C386%2C0.05&t=ZE8Rt8RJ87j5EWVk-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=26%3A3646&page-id=0%3A1"
+    },
+    {
+      "id": "reflection",
+      "title": "Results",
+      "body": "The outcome was an online environment that reflects Omeyocan's dedication to dog care and adoption, and invites users to explore, get involved, and most importantly, join the shelter's noble cause. With the redesign, the website became not just an information portal, but an extension of Omeyocan's heart and soul.\n\nThe redesign resulted in an intuitive, aesthetically pleasing website that encourages interaction and promotes the shelter's mission. These changes not only aligned the site more closely with Omeyocan's identity, but also invited direct action — adoption and volunteering — through a more accessible and engaging online environment.",
+      "images": [
+        {
+          "src": "/images/omeyocan/Showreel Web gallery remix.mp4",
+          "alt": "Omeyocan website showreel",
+          "size": "full"
+        }
+      ]
+    }
+  ]
 }

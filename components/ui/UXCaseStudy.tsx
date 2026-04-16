@@ -104,11 +104,13 @@ function SectionImages({ images }: { images: GalleryImage[] }) {
   }
 
   if (hasHalf) {
+    const halfImages = images.filter((img) => img.src);
+    const isSingle = halfImages.length === 1;
     return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+      <div className={isSingle ? "flex justify-center mb-8" : "grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8"}>
         {images.map((img, i) =>
           img.src ? (
-            <div key={i} className="rounded-xl overflow-hidden bg-cream-dark">
+            <div key={i} className={`rounded-xl overflow-hidden bg-cream-dark${isSingle ? " w-1/2" : ""}`}>
               <Image src={img.src} alt={img.alt ?? ""} width={800} height={1000} className="w-full h-auto block" />
             </div>
           ) : null
@@ -122,7 +124,11 @@ function SectionImages({ images }: { images: GalleryImage[] }) {
       {images.map((img, i) =>
         img.src ? (
           <div key={i} className="rounded-xl overflow-hidden bg-cream-dark">
-            <Image src={img.src} alt={img.alt ?? ""} width={1200} height={800} className="w-full h-auto block" />
+            {img.src.endsWith(".mp4") ? (
+              <video src={img.src} autoPlay loop muted playsInline className="w-full h-auto block" />
+            ) : (
+              <Image src={img.src} alt={img.alt ?? ""} width={1200} height={800} className="w-full h-auto block" />
+            )}
           </div>
         ) : null
       )}
