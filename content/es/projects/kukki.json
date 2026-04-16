@@ -7,8 +7,30 @@
   "client": "Kukki",
   "description": "Identidad de marca, diseño de redes sociales, banners para plataformas de delivery (Uber Eats, Rappi, DiDi Food) y fotografía gastronómica para Kukki.",
   "coverColor": "#D4A85A",
+  "coverImage": "/images/kukki/kukki-hero.png",
   "tags": ["Branding", "Redes Sociales", "Delivery", "Fotografía"],
   "order": 5,
   "gridVariant": null,
-  "images": []
+  "images": [
+    { "src": "/images/kukki/kukki-20.png", "alt": "Kukki — logo negro",                    "size": "half", "aspect": "3/1" },
+    { "src": "/images/kukki/kukki-21.png", "alt": "Kukki — logo blanco",                   "size": "half", "aspect": "3/1" },
+    { "src": "/images/kukki/kukki-03.png", "alt": "Kukki — paleta de colores",              "size": "full" },
+    { "src": "/images/kukki/kukki-04.jpg", "alt": "Kukki — Bazar febrero story",           "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-05.png", "alt": "Kukki — Bazar agosto story",            "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-06.png", "alt": "Kukki — Tráfico Bazar story",           "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-14.png", "alt": "Kukki — ilustración de marca",           "size": "half" },
+    { "src": "/images/kukki/kukki-15.png", "alt": "Kukki — Almendra Garapiñada",           "size": "half" },
+    { "src": "/images/kukki/kukki-22.png", "alt": "Kukki — Alfajores de Dulce de Leche",  "size": "half" },
+    { "src": "/images/kukki/kukki-23.png", "alt": "Kukki — Nueces Garapiñadas",           "size": "half" },
+    { "src": "/images/kukki/kukki-11.png", "alt": "Kukki — Momento Kukki story",           "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-12.png", "alt": "Kukki — Beneficios de comer postre",    "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-13.png", "alt": "Kukki — historia de las galletas",      "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-07.jpg", "alt": "Kukki — Galletas de Moca in-app",       "size": "half" },
+    { "src": "/images/kukki/kukki-08.png", "alt": "Kukki — Buen Fin 2021 story",           "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-09.png", "alt": "Kukki — Rappi Didi Food story",         "size": "small", "aspect": "9/16" },
+    { "src": "/images/kukki/kukki-16.png", "alt": "Kukki — Galletas de Frutos Secos",      "size": "half" },
+    { "src": "/images/kukki/kukki-17.png", "alt": "Kukki — Galletas de Churro",            "size": "half" },
+    { "src": "/images/kukki/kukki-18.png", "alt": "Kukki — Cacao Garapiñado",              "size": "half" },
+    { "src": "/images/kukki/kukki-19.png", "alt": "Kukki — Galletas de Chai",              "size": "half" }
+  ]
 }
