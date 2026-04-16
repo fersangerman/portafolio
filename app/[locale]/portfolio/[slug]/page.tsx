@@ -4,6 +4,7 @@ import path from "path";
 import Image from "next/image";
 import Link from "next/link";
 import OverlapGallery, { type GalleryImage } from "@/components/ui/OverlapGallery";
+import UXCaseStudy, { type CaseStudySection } from "@/components/ui/UXCaseStudy";
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
@@ -20,6 +21,7 @@ interface ProcessSection {
   results: string;
 }
 
+
 interface ProjectData {
   title: string;
   category: string;
@@ -34,6 +36,7 @@ interface ProjectData {
   images: GalleryImage[];
   clients?: ClientGroup[];
   process?: ProcessSection | null;
+  sections?: CaseStudySection[];
   order?: number;
 }
 
@@ -103,20 +106,21 @@ export default async function CaseStudy({ params }: Props) {
   return (
     <article className="pb-0">
 
-      {/* ── Hero: imagen limpia, sin texto encima ── */}
+      {/* ── Hero: imagen completa sin recorte ── */}
       {project.coverImage ? (
-        <div className="relative w-full h-[65vh]">
+        <div className="w-full max-h-[75vh] overflow-hidden">
           <Image
             src={project.coverImage}
             alt={project.title}
-            fill
-            className="object-cover"
+            width={1920}
+            height={1080}
+            className="w-full h-auto block"
             priority
           />
         </div>
       ) : (
         <div
-          className="w-full h-[40vh]"
+          className="w-full h-[50vh]"
           style={{ backgroundColor: project.coverColor ?? "#E8E5E1" }}
         />
       )}
@@ -159,7 +163,9 @@ export default async function CaseStudy({ params }: Props) {
       </div>
 
       {/* ── Contenido ── */}
-      {project.caseType === "full" && project.process ? (
+      {project.sections && project.sections.length > 0 ? (
+        <UXCaseStudy sections={project.sections} locale={locale} />
+      ) : project.caseType === "full" && project.process ? (
         <FullCaseStudy project={project} locale={locale} />
       ) : (
         <GalleryCase project={project} locale={locale} />
@@ -281,7 +287,7 @@ function NextProjectSection({
       href={`/${locale}/portfolio/${next.slug}`}
       className="group block border-t border-border mt-16"
     >
-      <div className="relative h-[45vh] overflow-hidden">
+      <div className="relative h-[32vh] overflow-hidden">
         {next.coverImage ? (
           <Image
             src={next.coverImage}
@@ -295,17 +301,18 @@ function NextProjectSection({
             style={{ backgroundColor: next.coverColor ?? "#E8E5E1" }}
           />
         )}
-        <div className="absolute inset-0 bg-black/25 group-hover:bg-black/15 transition-colors duration-300" />
+        <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 md:px-12 lg:px-24 pb-10">
-          <p className="text-xs text-white/60 uppercase tracking-widest font-medium mb-2">
+          <p className="text-xs text-white uppercase tracking-widest font-semibold mb-3 flex items-center gap-2">
+            <span className="inline-block w-4 h-px bg-white/60" />
             {isEs ? "Siguiente proyecto" : "Next project"}
           </p>
           <div className="flex items-end justify-between gap-4">
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-white">
+              <h2 className="text-2xl font-semibold text-white">
                 {next.title}
               </h2>
-              <p className="text-sm text-white/70 mt-1">
+              <p className="text-sm text-white/80 mt-1">
                 {next.category} · {next.year}
               </p>
             </div>

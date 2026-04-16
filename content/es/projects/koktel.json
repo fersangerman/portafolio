@@ -5,15 +5,116 @@
   "caseType": "full",
   "year": "2023–2024",
   "client": "Koktel",
-  "description": "UX Writing y diseño UI para Koktel. Definición de voz de marca, flujos de usuario y diseño de interfaz.",
-  "coverColor": "#7A5F9E",
+  "description": "UX Writing y diseño de interfaz para Koktel: una app que convierte cualquier cocina en un bar casero. Definición de voz de marca, flujos de usuario y diseño de interfaz.",
+  "coverImage": "/images/koktel/hero.png",
+  "coverColor": "#E07A30",
   "tags": ["UX Writing", "UI Design", "Voz de Marca", "Figma"],
   "order": 10,
   "gridVariant": null,
   "images": [],
-  "process": {
-    "challenge": "Koktel necesitaba una voz de marca clara y una interfaz coherente que transmitiera su personalidad de forma consistente en todos los puntos de contacto.",
-    "approach": "Trabajé el UX Writing definiendo la voz, el tono y los patrones de lenguaje. Diseñé los flujos de usuario y la interfaz visual asegurando coherencia entre texto y diseño.",
-    "results": "Sistema de UX Writing documentado e interfaz UI implementada con identidad verbal y visual alineadas."
-  }
+  "sections": [
+    {
+      "id": "overview",
+      "title": "El proyecto",
+      "body": "Koktel es una aplicación diseñada para transformar cualquier cocina en un bar casero, permitiendo a los usuarios explorar el arte de la mixología desde la comodidad de su hogar. En un mundo donde las reuniones sociales se han trasladado cada vez más al ámbito doméstico, Koktel ofrece una solución creativa y accesible para quienes desean disfrutar y compartir experiencias de coctelería de calidad profesional sin salir de casa.\n\nLa aplicación no solo simplifica el proceso de preparación de cócteles con recetas detalladas y tutoriales, sino que también invita a los usuarios a sumergirse en una comunidad global de amantes de los cócteles.",
+      "images": [
+        {
+          "src": "/images/koktel/portada.png",
+          "alt": "Pantallas de Koktel — vista general de la app",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Contexto y objetivos",
+      "body": "Con la adaptación a la vida social en casa, la aplicación busca ofrecer una experiencia de coctelería envolvente que antes estaba limitada a bares y eventos exclusivos. Koktel aprovecha esta nueva realidad para proporcionar una ventana de exploración gastronómica y creativa directamente desde el hogar.\n\nEl objetivo principal fue revolucionar la coctelería en casa, haciendo que sea fácil y accesible para cualquier persona, independientemente de su experiencia previa. Además de asegurar que los usuarios pudieran descubrir recetas y tutoriales relevantes, diseñar un proceso de suscripción y sistema de pago intuitivo y seguro, e implementar un método de calificación de recetas inmediato y fácil de usar."
+    },
+    {
+      "id": "research",
+      "title": "Investigación de usuario",
+      "body": "Koktel está dirigido a adultos jóvenes y de mediana edad entre 18 y 45 años con interés en mejorar sus habilidades de coctelería en casa. Este grupo incluye entusiastas del \"hazlo tú mismo\" (DIY) y amantes de la coctelería casera que son tecnológicamente hábiles y buscan nuevas experiencias gastronómicas.\n\nDefiní dos user personas principales que guiaron todas las decisiones de diseño: Sofía, una empresaria ambiciosa que busca elevar sus habilidades para impresionar en reuniones sociales, y Lucas, un diseñador gráfico creativo que quiere sorprender a sus amigos con cócteles únicos. El mapa de empatía me permitió entender sus motivaciones, frustraciones y comportamientos en profundidad.",
+      "images": [
+        {
+          "src": "/images/koktel/userpersona1.png",
+          "alt": "User Persona: Sofía Gómez — Ambiciosa, conectada, exigente",
+          "size": "half"
+        },
+        {
+          "src": "/images/koktel/userpersona2.png",
+          "alt": "User Persona: Lucas Martínez — Creativo, social, detallista",
+          "size": "half"
+        },
+        {
+          "src": "/images/koktel/mapa de empatia.png",
+          "alt": "Mapa de empatía — qué piensa, siente, dice y hace el usuario",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "Voz y tono",
+      "body": "Koktel utiliza una voz profesional pero accesible, enfocándose en ser inclusiva tanto para expertos como para novatos en mixología. Este equilibrio busca empoderar a los usuarios sin sentirse pretencioso, manteniendo un tono amigable y práctico que invita a la exploración y experimentación.\n\nDefiní el mapa de tono para cada momento clave del recorrido del usuario: desde la bienvenida —entusiasta y cercana— hasta el proceso de pago —formal y seguro. Este sistema garantiza coherencia comunicativa en toda la app, adaptando el registro según el contexto sin perder la personalidad de la marca.",
+      "images": [
+        {
+          "src": "/images/koktel/mapa de tono.png",
+          "alt": "Mapa de tono por etapa del recorrido del usuario",
+          "size": "full"
+        },
+        {
+          "src": "/images/koktel/content prototype.png",
+          "alt": "Prototipo de contenido — conversación guiada en la app",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "benchmarking",
+      "title": "Benchmarking",
+      "body": "Realicé un análisis competitivo para comprender las prácticas en la industria y asegurar que la estrategia de contenido de Koktel resonara con su audiencia. Este benchmarking informó la producción de contenidos, desde recetas hasta tutoriales, garantizando que cada pieza comunicara efectivamente la pasión de Koktel por la coctelería.",
+      "benchmarks": [
+        {
+          "name": "El Coctelero",
+          "image": "/images/koktel/koktel-bench1.png",
+          "text": "El sitio, claramente dirigido a un público español, se beneficiaría de un contenido personalizado y de una caja de búsqueda que mejore la usabilidad. Un tono profesional y educativo se adapta bien al enfoque del sitio hacia entusiastas serios de la coctelería. CTAs bien diseñados podrían fomentar la inscripción en cursos y la participación comunitaria. Títulos claros e imágenes de alta calidad de cócteles terminados inspirarían a los usuarios, mientras que ofertas especiales podrían potenciar la interacción y las ventas."
+        },
+        {
+          "name": "Club de bartenders",
+          "image": "/images/koktel/koktel-bench2.png",
+          "text": "Nuestro análisis resalta la necesidad de adaptar contenidos a las preferencias regionales y mejorar la navegabilidad con cajas de búsqueda. Mantener un tono relajado y comprensible facilita la conexión con los usuarios, mientras que CTAs efectivos para suscripciones y participación social, junto con imágenes impactantes y ofertas atractivas, son esenciales para enriquecer la experiencia en la plataforma."
+        },
+        {
+          "name": "Cóctel de",
+          "image": "/images/koktel/koktel-bench3.png",
+          "text": "El sitio apunta a una audiencia amplia de coctelería, destacando la utilidad de incluir banners para resaltar artículos y productos. Una caja de búsqueda facilitaría encontrar recetas e ingredientes. El tono acogedor y las invitaciones claras a la acción buscan inspirar a los usuarios, con títulos atractivos y bajadas útiles, y las imágenes de calidad animan la preparación de cócteles. Las ofertas promocionales están diseñadas para incrementar la interacción y las ventas."
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "La solución",
+      "carousel": true,
+      "body": "El resultado fue una app con identidad visual clara —naranja vibrante, tipografía limpia, fotografía de producto de alta calidad— y una experiencia de usuario que guía al usuario desde que abre la app hasta que prepara su primer cóctel.\n\nDiseñé los flujos completos: onboarding, exploración de recetas, calificación, suscripción premium y proceso de pago. Cada pantalla aplica el sistema de voz y tono definido previamente, asegurando que el copy y el diseño visual hablen con una sola voz.",
+      "images": [
+        { "src": "/images/koktel/koktel-cap-01.png", "alt": "Pantalla de la app Koktel", "size": "full" },
+        { "src": "/images/koktel/OT12YV1.jpg", "alt": "Pantallas de Koktel — vista general", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-03.png", "alt": "Pantalla de la app Koktel", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-04.png", "alt": "Pantalla de la app Koktel", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-05.png", "alt": "Pantalla de la app Koktel", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-06.png", "alt": "Pantalla de la app Koktel", "size": "full" },
+        { "src": "/images/koktel/OT134U1.jpg", "alt": "Pantallas de Koktel — flujos de pago y registro", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-08.png", "alt": "Pantalla de la app Koktel", "size": "full" }
+      ],
+      "figmaEmbed": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/h6qP81sthKbrVHoTvjEoYU/Koktel?page-id=43%3A2&node-id=45-428&starting-point-node-id=45%3A360"
+    },
+    {
+      "id": "reflection",
+      "title": "Reflexión",
+      "body": "Al concluir el proyecto Koktel, observé que una navegación intuitiva y un contenido visualmente atractivo son clave para una experiencia de usuario exitosa. El análisis resalta la eficacia de los CTAs directos y la importancia de facilitar el acceso a las recetas, lo que invita a una mayor interacción y compromiso con la plataforma.\n\nLas estrategias de contenido y diseño implementadas apuntan a fortalecer la conexión entre los usuarios y la cultura de la coctelería. Este proyecto me demostró que el UX Writing no es un elemento secundario del diseño, sino la columna vertebral de una experiencia coherente y memorable.",
+      "images": [
+        { "src": "/images/koktel/koktel-cap-07.png", "alt": "Pantalla final de la app Koktel", "size": "full" }
+      ]
+    }
+  ]
 }

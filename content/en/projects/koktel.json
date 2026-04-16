@@ -5,15 +5,116 @@
   "caseType": "full",
   "year": "2023–2024",
   "client": "Koktel",
-  "description": "UX Writing and UI design for Koktel. Brand voice definition, user flows, and interface design.",
-  "coverColor": "#7A5F9E",
+  "description": "UX Writing and UI design for Koktel: an app that turns any kitchen into a home bar. Brand voice definition, user flows, and interface design.",
+  "coverImage": "/images/koktel/hero.png",
+  "coverColor": "#E07A30",
   "tags": ["UX Writing", "UI Design", "Brand Voice", "Figma"],
   "order": 10,
   "gridVariant": null,
   "images": [],
-  "process": {
-    "challenge": "Koktel needed a clear brand voice and a cohesive interface that consistently expressed its personality across all touchpoints.",
-    "approach": "I developed the UX Writing system — defining the voice, tone, and language patterns — then designed the user flows and UI, ensuring alignment between copy and visuals.",
-    "results": "Documented UX Writing system and implemented UI with aligned verbal and visual identity."
-  }
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The project",
+      "body": "Koktel is an app designed to transform any kitchen into a home bar, allowing users to explore the art of mixology from the comfort of their home. In a world where social gatherings have increasingly moved indoors, Koktel offers a creative and accessible solution for those who want to enjoy and share professional-quality cocktail experiences without leaving home.\n\nThe app not only simplifies the cocktail-making process with detailed recipes and tutorials, but also invites users to immerse themselves in a global community of cocktail enthusiasts.",
+      "images": [
+        {
+          "src": "/images/koktel/portada.png",
+          "alt": "Koktel screens — general app overview",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context & goals",
+      "body": "With the adaptation to social life at home, the app aims to offer an immersive cocktail experience that was previously limited to bars and exclusive events. Koktel takes advantage of this new reality to provide a window for gastronomic and creative exploration directly from home.\n\nThe main goal was to revolutionize home cocktail-making, making it easy and accessible for anyone regardless of prior experience. This also meant ensuring users could discover relevant recipes and tutorials, designing an intuitive and secure subscription and payment process, and implementing an immediate and easy-to-use recipe rating system."
+    },
+    {
+      "id": "research",
+      "title": "User research",
+      "body": "Koktel is aimed at young and middle-aged adults between 18 and 45 years old with an interest in improving their home cocktail-making skills. This group includes DIY enthusiasts and home cocktail lovers who are technologically savvy and seek new gastronomic experiences.\n\nI defined two main user personas that guided all design decisions: Sofía, an ambitious entrepreneur looking to elevate her skills to impress at social gatherings, and Lucas, a creative graphic designer who wants to surprise his friends with unique cocktails. The empathy map helped me understand their motivations, frustrations, and behaviors in depth.",
+      "images": [
+        {
+          "src": "/images/koktel/userpersona1.png",
+          "alt": "User Persona: Sofía Gómez — Ambitious, connected, demanding",
+          "size": "half"
+        },
+        {
+          "src": "/images/koktel/userpersona2.png",
+          "alt": "User Persona: Lucas Martínez — Creative, social, detail-oriented",
+          "size": "half"
+        },
+        {
+          "src": "/images/koktel/mapa de empatia.png",
+          "alt": "Empathy map — what the user thinks, feels, says and does",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "Voice & tone",
+      "body": "Koktel uses a professional yet accessible voice, focusing on being inclusive for both experts and novices in mixology. This balance aims to empower users without feeling pretentious, maintaining a friendly and practical tone that invites exploration and experimentation.\n\nI defined the tone map for each key moment in the user journey: from the welcome — enthusiastic and warm — to the payment process — formal and reassuring. This system ensures communicative consistency throughout the app, adapting the register to context without losing the brand's personality.",
+      "images": [
+        {
+          "src": "/images/koktel/mapa de tono.png",
+          "alt": "Tone map by stage of the user journey",
+          "size": "full"
+        },
+        {
+          "src": "/images/koktel/content prototype.png",
+          "alt": "Content prototype — guided conversation in the app",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "benchmarking",
+      "title": "Benchmarking",
+      "body": "I conducted a competitive analysis to understand industry practices and ensure Koktel's content strategy resonated with its audience. This benchmarking informed content production — from recipes to tutorials — ensuring every piece effectively communicated Koktel's passion for cocktail culture.",
+      "benchmarks": [
+        {
+          "name": "El Coctelero",
+          "image": "/images/koktel/koktel-bench1.png",
+          "text": "The site, clearly aimed at a Spanish audience, would benefit from personalized content and a search box that improves usability. A professional and educational tone suits the site's focus on serious cocktail enthusiasts. Well-designed CTAs could encourage course enrollment and community participation. Clear titles and high-quality images of finished cocktails would inspire users, while special offers could boost interaction and sales."
+        },
+        {
+          "name": "Club de bartenders",
+          "image": "/images/koktel/koktel-bench2.png",
+          "text": "Our analysis highlights the need to adapt content to regional preferences and improve navigation with search boxes. Maintaining a relaxed and approachable tone facilitates connection with users, while effective CTAs for subscriptions and social participation, along with impactful images and attractive offers, are essential to enrich the platform experience."
+        },
+        {
+          "name": "Cóctel de",
+          "image": "/images/koktel/koktel-bench3.png",
+          "text": "The site targets a broad cocktail audience, highlighting the usefulness of banners to showcase articles and products. A search box would make it easier to find recipes and ingredients. The welcoming tone and clear calls to action aim to inspire users, with attractive headlines and useful taglines, while quality images encourage cocktail preparation. Promotional offers are designed to increase interaction and sales."
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "The solution",
+      "carousel": true,
+      "body": "The result was an app with a clear visual identity — vibrant orange, clean typography, high-quality product photography — and a user experience that guides the user from opening the app to making their first cocktail.\n\nI designed the complete flows: onboarding, recipe exploration, rating, premium subscription, and payment process. Each screen applies the previously defined voice and tone system, ensuring that the copy and visual design speak with one voice.",
+      "images": [
+        { "src": "/images/koktel/koktel-cap-01.png", "alt": "Koktel app screen", "size": "full" },
+        { "src": "/images/koktel/OT12YV1.jpg", "alt": "Koktel screens — general overview", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-03.png", "alt": "Koktel app screen", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-04.png", "alt": "Koktel app screen", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-05.png", "alt": "Koktel app screen", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-06.png", "alt": "Koktel app screen", "size": "full" },
+        { "src": "/images/koktel/OT134U1.jpg", "alt": "Koktel screens — payment and registration flows", "size": "full" },
+        { "src": "/images/koktel/koktel-cap-08.png", "alt": "Koktel app screen", "size": "full" }
+      ],
+      "figmaEmbed": "https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/h6qP81sthKbrVHoTvjEoYU/Koktel?page-id=43%3A2&node-id=45-428&starting-point-node-id=45%3A360"
+    },
+    {
+      "id": "reflection",
+      "title": "Reflection",
+      "body": "At the conclusion of the Koktel project, I observed that intuitive navigation and visually appealing content are key to a successful user experience. The analysis highlights the effectiveness of direct CTAs and the importance of facilitating access to recipes, which invites greater interaction and engagement with the platform.\n\nThe content and design strategies implemented aim to strengthen the connection between users and cocktail culture. This project showed me that UX Writing is not a secondary element of design, but the backbone of a coherent and memorable experience.",
+      "images": [
+        { "src": "/images/koktel/koktel-cap-07.png", "alt": "Koktel app final screen", "size": "full" }
+      ]
+    }
+  ]
 }
