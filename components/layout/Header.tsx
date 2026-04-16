@@ -45,12 +45,6 @@ export default function Header() {
         >
           {t("about")}
         </Link>
-        <Link
-          href={`/${locale}/contact`}
-          className="text-ink-muted hover:text-ink transition-colors font-medium"
-        >
-          {t("contact")}
-        </Link>
         <button
           onClick={switchLocale}
           className="text-ink-light hover:text-ink transition-colors uppercase text-xs font-semibold tracking-widest border border-border px-2.5 py-1 rounded hover:border-ink-muted"

@@ -4,7 +4,7 @@ export default async function Contact() {
   const t = await getTranslations("contact");
 
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-20 max-w-xl">
+    <section className="hidden px-6 md:px-12 lg:px-24 py-20 max-w-xl">
       <h1 className="text-4xl font-semibold tracking-tight mb-3">{t("title")}</h1>
       <p className="text-gray-500 mb-10">{t("subtitle")}</p>
 

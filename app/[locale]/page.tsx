@@ -99,7 +99,7 @@ export default async function Home() {
         <div className="flex items-end justify-between mb-12">
           <div>
             <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-3 font-medium">
-              {locale === "es" ? "Trabajo selecto" : "Selected work"}
+              {locale === "es" ? "Proyectos" : "Projects"}
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-ink">
               {locale === "es" ? "Portafolio" : "Portfolio"}
@@ -130,7 +130,7 @@ export default async function Home() {
       </section>
 
       {/* ── Servicios ── */}
-      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-border bg-cream-dark">
+      <section className="px-6 md:px-12 lg:px-24 py-24 border-t border-border bg-cream">
         <div className="flex items-end justify-between mb-12">
           <div>
             <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-3 font-medium">
@@ -160,8 +160,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* ── Contacto CTA ── */}
-      <section className="px-6 md:px-12 lg:px-24 py-32 border-t border-border">
+      {/* ── Contacto CTA ── (oculto temporalmente) */}
+      <section className="hidden px-6 md:px-12 lg:px-24 py-32 border-t border-border">
         <div className="max-w-2xl">
           <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-4 font-medium">
             {locale === "es" ? "Hablemos" : "Let's talk"}
