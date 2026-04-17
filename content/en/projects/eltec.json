@@ -5,15 +5,64 @@
   "caseType": "full",
   "year": "2023–2024",
   "client": "Electronica Eltec",
-  "description": "Website redesign, wireframes, brand guidelines, and product catalog for Electronica Eltec.",
+  "description": "Website redesign for Electrónica Eltec: information architecture, user flow, and interface design for an industrial electronics solutions company.",
+  "coverImage": "/images/eltec/heroimage.png",
   "coverColor": "#5A6E7F",
-  "tags": ["UX/UI", "Web Redesign", "Wireframes", "Catalog"],
+  "tags": ["UX/UI", "Web Redesign", "Information Architecture", "Figma"],
   "order": 9,
   "gridVariant": null,
   "images": [],
-  "process": {
-    "challenge": "The existing website was hard to navigate and didn't reflect the quality of their products. They also lacked a consistent visual identity system.",
-    "approach": "I audited the current site, redefined the information architecture, designed wireframes, and built the new visual system — plus a product catalog and brand guidelines.",
-    "results": "New website with improved usability, refreshed visual identity, and a professional product catalog."
-  }
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The project",
+      "body": "Electrónica Eltec specializes in the design, engineering, and manufacturing of advanced electronic solutions, primarily serving the home appliance and commercial refrigeration industries. With a focus on innovation and quality, Eltec offers customized solutions that meet a wide range of needs.",
+      "images": [
+        {
+          "src": "/images/eltec/eltec-07.png",
+          "alt": "Electrónica Eltec website",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Context & needs",
+      "body": "The website redesign was driven by multiple key challenges that limited the site's effectiveness and reach. The platform was outdated, which affected not only its aesthetics but also its functionality, resulting in a poor user experience. This contributed to low site traffic and an almost non-existent customer conversion rate.\n\nAdditionally, the contact form was poorly designed, further complicating user interaction and engagement. Another significant issue was the lack of clarity around what the company offered and the details of its products, leaving visitors confused and less likely to convert. This set of problems highlighted the urgent need for a fresh, structured approach to the website redesign."
+    },
+    {
+      "id": "structure",
+      "title": "Information architecture",
+      "body": "For the website redesign, a new information architecture was implemented to improve navigability and accessibility. The main focus was to reorganize content so that users could quickly understand who we are and what we offer, providing a clear path to relevant information and products.",
+      "images": [
+        {
+          "src": "/images/eltec/Site Map.png",
+          "alt": "Information architecture — Eltec sitemap",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "userflow",
+      "title": "User Flow",
+      "body": "The process begins with navigation by industry, allowing users to select the sector that best fits their interests or specific needs. Once an industry is selected, the next step takes users to explore related products, providing clear and accessible details for each option.\n\nAfter exploring the products, users are directed to the contact section, where a simplified, easy-to-use form awaits. This form was designed to collect essential user information quickly and without friction, ensuring they can submit inquiries or information requests efficiently."
+    },
+    {
+      "id": "solution",
+      "title": "The solution",
+      "carousel": true,
+      "body": "The result was a clear, structured, conversion-focused website where each section guides the user from discovering the company to making direct contact. The new design reflects Eltec's technical expertise and facilitates communication with its industrial clients.",
+      "images": [
+        { "src": "/images/eltec/eltec-01.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-02.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-03.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-04.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-09.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-10.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-11.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-12.png", "alt": "Eltec website screen", "size": "full" },
+        { "src": "/images/eltec/eltec-13.png", "alt": "Eltec website screen", "size": "full" }
+      ]
+    }
+  ]
 }

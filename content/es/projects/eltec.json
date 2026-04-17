@@ -5,15 +5,64 @@
   "caseType": "full",
   "year": "2023–2024",
   "client": "Electronica Eltec",
-  "description": "Rediseño de sitio web, wireframes, manual de identidad y catálogo de productos para Electronica Eltec.",
+  "description": "Rediseño de sitio web para Electrónica Eltec: arquitectura de información, user flow y diseño de interfaz para una empresa de soluciones electrónicas industriales.",
+  "coverImage": "/images/eltec/heroimage.png",
   "coverColor": "#5A6E7F",
-  "tags": ["UX/UI", "Rediseño Web", "Wireframes", "Catálogo"],
+  "tags": ["UX/UI", "Rediseño Web", "Arquitectura de Información", "Figma"],
   "order": 9,
   "gridVariant": null,
   "images": [],
-  "process": {
-    "challenge": "El sitio web existente era difícil de navegar y no reflejaba la calidad de sus productos. Además carecían de un sistema de identidad visual consistente.",
-    "approach": "Realicé un diagnóstico del sitio actual, redefiní la arquitectura de información, diseñé wireframes y el nuevo sistema visual. También desarrollé un catálogo de productos y manual de identidad.",
-    "results": "Nuevo sitio web con mejor usabilidad, identidad visual renovada y catálogo de productos profesional."
-  }
+  "sections": [
+    {
+      "id": "overview",
+      "title": "El proyecto",
+      "body": "Electrónica Eltec se especializa en el diseño, ingeniería y fabricación de soluciones electrónicas avanzadas, sirviendo principalmente a las industrias de electrodomésticos y refrigeración comercial. Con un enfoque en la innovación y la calidad, Eltec ofrece soluciones personalizadas que satisfacen una amplia gama de necesidades.",
+      "images": [
+        {
+          "src": "/images/eltec/eltec-07.png",
+          "alt": "Sitio web de Electrónica Eltec",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "context",
+      "title": "Contexto y necesidades",
+      "body": "El rediseño de la página web se originó por múltiples desafíos clave que limitaban la efectividad y el alcance del sitio. La plataforma estaba anticuada, lo que no solo afectaba la estética, sino también la funcionalidad, resultando en una experiencia de usuario pobre. Esto contribuyó a un bajo tráfico en el sitio y una tasa de conversión de clientes prácticamente inexistente.\n\nAdemás, el formulario de contacto estaba mal diseñado, lo que complicaba aún más la interacción y el engagement de los usuarios. Otro problema significativo era la falta de claridad en la comunicación sobre lo que la empresa ofrecía y los detalles de sus productos, lo que dejaba a los visitantes confundidos y menos propensos a convertirse en clientes. Este conjunto de problemas subrayó la necesidad urgente de un enfoque fresco y estructurado para el rediseño del sitio web."
+    },
+    {
+      "id": "structure",
+      "title": "Arquitectura de la información",
+      "body": "Para el rediseño del sitio web, se implementó una nueva arquitectura de la información orientada a mejorar la navegabilidad y accesibilidad. El enfoque principal fue reorganizar el contenido de manera que los usuarios pudieran entender rápidamente quiénes somos y qué ofrecemos, facilitando una ruta clara hacia la información relevante y los productos.",
+      "images": [
+        {
+          "src": "/images/eltec/Site Map.png",
+          "alt": "Arquitectura de información — sitemap de Eltec",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "userflow",
+      "title": "User Flow",
+      "body": "El proceso comienza con la navegación por industrias, permitiendo a los usuarios seleccionar el sector que más se ajusta a sus intereses o necesidades específicas. Una vez seleccionada la industria, el siguiente paso lleva a los usuarios a explorar los productos relacionados, proporcionando detalles claros y accesibles para cada opción.\n\nTras explorar los productos, los usuarios son dirigidos hacia la sección de contacto, donde se encuentra un formulario simplificado y fácil de usar. Este formulario ha sido diseñado para recoger información esencial de los usuarios de manera rápida y sin complicaciones, asegurando que puedan enviar sus consultas o solicitudes de información de manera eficaz."
+    },
+    {
+      "id": "solution",
+      "title": "La solución",
+      "carousel": true,
+      "body": "El resultado fue un sitio web claro, estructurado y orientado a la conversión, donde cada sección guía al usuario desde el conocimiento de la empresa hasta el contacto directo. El nuevo diseño refleja la solidez técnica de Eltec y facilita la comunicación con sus clientes industriales.",
+      "images": [
+        { "src": "/images/eltec/eltec-01.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-02.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-03.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-04.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-09.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-10.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-11.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-12.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" },
+        { "src": "/images/eltec/eltec-13.png", "alt": "Pantalla del sitio web de Eltec", "size": "full" }
+      ]
+    }
+  ]
 }
