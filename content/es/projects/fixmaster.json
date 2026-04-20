@@ -1,0 +1,113 @@
+{
+  "title": "FixMaster",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2024",
+  "client": "FixMaster",
+  "description": "Diseño UX/UI para FixMaster — una plataforma digital que conecta a propietarios de viviendas en la Ciudad de México con proveedores de servicios de mantenimiento y reparación confiables.",
+  "coverImage": "/images/fixmaster/hero.png",
+  "coverColor": "#2C5F8A",
+  "tags": ["UX/UI", "UX Research", "Mobile", "Figma"],
+  "order": 8,
+  "gridVariant": "wide",
+  "images": [],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "El proyecto",
+      "body": "En la Ciudad de México, los propietarios de viviendas se enfrentan al desafío recurrente de encontrar servicios fiables. La búsqueda manual es tediosa y frecuentemente culmina en servicios de mala calidad y experiencias de usuario insatisfactorias. FixMaster conecta a los propietarios con proveedores verificados y ofrece un sistema que facilita la evaluación y garantiza la calidad de los servicios. Este enfoque no solo asegura una experiencia satisfactoria sino que también transforma la gestión de servicios para propiedades."
+    },
+    {
+      "id": "problem",
+      "title": "Problem Statement",
+      "body": "Los propietarios de viviendas se topan con el desafío de localizar y contratar servicios de reparación y mantenimiento que sean realmente confiables. La búsqueda manual se convierte en una tarea engorrosa que desemboca en la elección de servicios de calidad cuestionable y en experiencias que dejan mucho que desear."
+    },
+    {
+      "id": "painpoints",
+      "title": "Pain Points",
+      "body": "Los usuarios frecuentemente se enfrentan a:\n• Disponibilidad Limitada: La restricción de servicios a ciertas zonas geográficas limita las opciones de los usuarios, especialmente en una ciudad tan extensa como la Ciudad de México.\n• Proceso de Verificación: Existe una preocupación constante sobre la calidad y confiabilidad de los proveedores, exacerbada por la falta de un proceso de verificación riguroso.\n• Complejidad en la Contratación: Los usuarios buscan simplificar el proceso de contratación, optando por interfaces intuitivas y procedimientos sin complicaciones.\n• Atención al Cliente: Un soporte al cliente deficiente o la falta de comunicación efectiva durante el proceso de contratación y post-servicio son fuentes comunes de frustración.\n• Experiencias Anteriores Negativas: Malas experiencias previas con proveedores que no cumplieron con las expectativas de calidad establecen un precedente negativo para futuras contrataciones."
+    },
+    {
+      "id": "research",
+      "title": "Design thinking",
+      "body": "Nos sumergimos en una investigación para captar las verdaderas necesidades de nuestros usuarios. A través de encuestas en línea y entrevistas personales, recabamos datos directamente de propietarios de viviendas en la Ciudad de México, quienes compartieron sus experiencias y desafíos al buscar servicios de mantenimiento y reparación. Esta investigación nos permitió identificar patrones comunes de insatisfacción, como la dificultad en encontrar proveedores confiables y la falta de transparencia en el proceso de contratación.\n\nNuestro enfoque en FixMaster se ha centrado en la metodología de Design Thinking, una práctica que nos permite profundizar en las verdaderas necesidades y deseos de nuestros usuarios. La aplicación de Design Thinking nos ha permitido transformar los feedbacks y pain points en soluciones innovadoras y centradas en el usuario, garantizando que cada actualización de nuestra plataforma sea relevante y valiosa para nuestros clientes.",
+      "images": [
+        {
+          "src": "/images/fixmaster/userpersona.png",
+          "alt": "User persona de FixMaster",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Site map y User flow",
+      "body": "",
+      "images": [
+        {
+          "src": "/images/fixmaster/sitemap.png",
+          "alt": "Sitemap de FixMaster",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/USERFLOW.jpg",
+          "alt": "Flujo de usuario de FixMaster",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "La solución",
+      "body": "Una plataforma digital que conecta a los propietarios de viviendas en la Ciudad de México con proveedores de servicios de mantenimiento y reparación confiables. Facilita una búsqueda eficiente, contratación y seguimiento de servicios, asegurando transparencia y confiabilidad en cada paso.",
+      "figmaEmbed": "https://embed.figma.com/proto/hu6gVhBMnMk7QFvoR7gmY0/FixMaster?node-id=119-2285&p=f&viewport=48%2C299%2C0.12&scaling=scale-down&content-scaling=fixed&starting-point-node-id=104%3A2125&show-proto-sidebar=1&page-id=104%3A2124&embed-host=share"
+    },
+    {
+      "id": "screens",
+      "title": "",
+      "body": "",
+      "carousel": true,
+      "images": [
+        {
+          "src": "/images/fixmaster/VARIOS.jpg",
+          "alt": "Elementos de diseño FixMaster",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/Pantallas.jpg",
+          "alt": "Pantallas de la app FixMaster",
+          "size": "full",
+          "aspect": "16/9"
+        },
+        {
+          "src": "/images/fixmaster/captura3.png",
+          "alt": "Captura de pantalla FixMaster",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/captura4.png",
+          "alt": "Captura de pantalla FixMaster",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/captura5.png",
+          "alt": "Captura de pantalla FixMaster",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "title": "",
+      "body": "",
+      "images": [
+        {
+          "src": "/images/fixmaster/showreel.mp4",
+          "alt": "Showreel mobile de FixMaster",
+          "size": "full"
+        }
+      ]
+    }
+  ]
+}

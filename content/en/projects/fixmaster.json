@@ -1,0 +1,113 @@
+{
+  "title": "FixMaster",
+  "category": "UX/UI",
+  "categoryKey": "uxui",
+  "caseType": "full",
+  "year": "2024",
+  "client": "FixMaster",
+  "description": "UX/UI design for FixMaster — a digital platform connecting homeowners in Mexico City with verified, reliable maintenance and repair service providers.",
+  "coverImage": "/images/fixmaster/hero.png",
+  "coverColor": "#2C5F8A",
+  "tags": ["UX/UI", "UX Research", "Mobile", "Figma"],
+  "order": 8,
+  "gridVariant": "wide",
+  "images": [],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The project",
+      "body": "In Mexico City, homeowners face the recurring challenge of finding reliable services. Manual searching is tedious and frequently results in poor-quality services and unsatisfying user experiences. FixMaster connects homeowners with verified providers and offers a system that facilitates evaluation and guarantees service quality. This approach not only ensures a satisfying experience but also transforms property service management."
+    },
+    {
+      "id": "problem",
+      "title": "Problem Statement",
+      "body": "Homeowners struggle to find and hire truly reliable repair and maintenance services. Manual searching becomes a cumbersome task that leads to the selection of questionable-quality services and experiences that leave much to be desired."
+    },
+    {
+      "id": "painpoints",
+      "title": "Pain Points",
+      "body": "Users frequently face:\n• Limited Availability: Service restrictions to certain geographic areas limit user options, especially in a city as vast as Mexico City.\n• Verification Process: There is constant concern about the quality and reliability of providers, exacerbated by the lack of a rigorous verification process.\n• Hiring Complexity: Users seek to simplify the hiring process, opting for intuitive interfaces and straightforward procedures.\n• Customer Service: Poor customer support or lack of effective communication during and after the hiring process are common sources of frustration.\n• Negative Previous Experiences: Bad past experiences with providers who failed to meet quality expectations set a negative precedent for future hires."
+    },
+    {
+      "id": "research",
+      "title": "Design thinking",
+      "body": "We immersed ourselves in research to capture the true needs of our users. Through online surveys and personal interviews, we gathered data directly from homeowners in Mexico City, who shared their experiences and challenges when looking for maintenance and repair services. This research allowed us to identify common patterns of dissatisfaction, such as the difficulty in finding reliable providers and the lack of transparency in the hiring process.\n\nOur approach at FixMaster has centered on the Design Thinking methodology — a practice that allows us to deeply understand the true needs and desires of our users. Applying Design Thinking has enabled us to transform feedback and pain points into innovative, user-centered solutions, ensuring that every platform update is relevant and valuable to our clients.",
+      "images": [
+        {
+          "src": "/images/fixmaster/userpersona.png",
+          "alt": "FixMaster user persona",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "title": "Site map & User flow",
+      "body": "",
+      "images": [
+        {
+          "src": "/images/fixmaster/sitemap.png",
+          "alt": "FixMaster sitemap",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/USERFLOW.jpg",
+          "alt": "FixMaster user flow diagram",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "solution",
+      "title": "The solution",
+      "body": "A digital platform that connects homeowners in Mexico City with reliable maintenance and repair service providers. It facilitates efficient search, hiring, and service tracking — ensuring transparency and reliability at every step.",
+      "figmaEmbed": "https://embed.figma.com/proto/hu6gVhBMnMk7QFvoR7gmY0/FixMaster?node-id=119-2285&p=f&viewport=48%2C299%2C0.12&scaling=scale-down&content-scaling=fixed&starting-point-node-id=104%3A2125&show-proto-sidebar=1&page-id=104%3A2124&embed-host=share"
+    },
+    {
+      "id": "screens",
+      "title": "",
+      "body": "",
+      "carousel": true,
+      "images": [
+        {
+          "src": "/images/fixmaster/VARIOS.jpg",
+          "alt": "FixMaster design elements",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/Pantallas.jpg",
+          "alt": "FixMaster app screens",
+          "size": "full",
+          "aspect": "16/9"
+        },
+        {
+          "src": "/images/fixmaster/captura3.png",
+          "alt": "FixMaster screenshot",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/captura4.png",
+          "alt": "FixMaster screenshot",
+          "size": "full"
+        },
+        {
+          "src": "/images/fixmaster/captura5.png",
+          "alt": "FixMaster screenshot",
+          "size": "full"
+        }
+      ]
+    },
+    {
+      "id": "reflection",
+      "title": "",
+      "body": "",
+      "images": [
+        {
+          "src": "/images/fixmaster/showreel.mp4",
+          "alt": "FixMaster mobile showreel",
+          "size": "full"
+        }
+      ]
+    }
+  ]
+}
