@@ -4,6 +4,7 @@ import { readdirSync, readFileSync } from "fs";
 import path from "path";
 import ProjectCard, { type Project } from "@/components/ui/ProjectCard";
 import ServiceCard from "@/components/ui/ServiceCard";
+import HeroReveal from "@/components/ui/HeroRevealWrapper";
 
 function readProjects(locale: string): Project[] {
   const dir = path.join(process.cwd(), "content", locale, "projects");
@@ -70,28 +71,14 @@ export default async function Home() {
   return (
     <div>
       {/* ── Hero ── */}
-      <section className="min-h-[calc(100vh-4rem)] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-24">
-        <p className="text-xs text-ink-light uppercase tracking-[0.2em] mb-6 font-medium">
-          {t("role")}
-        </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.05] tracking-tight max-w-4xl whitespace-pre-line text-ink">
-          {t("headline")}
-        </h1>
-        <div className="mt-12 flex items-center gap-6">
-          <Link
-            href={`/${locale}/portfolio`}
-            className="inline-flex items-center gap-2 text-sm font-semibold bg-violet text-white px-7 py-3.5 rounded-full hover:bg-violet-dark transition-colors"
-          >
-            {t("cta")} →
-          </Link>
-          <a
-            href="/Fernanda_SanGerman_CV.pdf"
-            download
-            className="text-sm font-medium text-ink-muted hover:text-ink transition-colors"
-          >
-            {locale === "es" ? "Descargar CV" : "Download CV"}
-          </a>
-        </div>
+      <section className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-24">
+        <HeroReveal
+          role={t("role")}
+          headline={t("headline")}
+          cta={t("cta")}
+          locale={locale}
+          portfolioHref={`/${locale}/portfolio`}
+        />
       </section>
 
       {/* ── Portafolio ── */}
