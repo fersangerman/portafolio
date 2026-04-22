@@ -39,10 +39,16 @@ export default function HeroReveal({
     });
   }, []);
 
-  // Typewriter arranca casi inmediato
+  // Typewriter arranca cuando el splash termina
   useEffect(() => {
-    const boot = setTimeout(() => setCount(0), 300);
-    return () => clearTimeout(boot);
+    const start = () => setCount(0);
+    window.addEventListener("splashDone", start);
+    // Fallback: si el splash ya terminó o no existe, arrancar a los 3.5s
+    const fallback = setTimeout(start, 3500);
+    return () => {
+      window.removeEventListener("splashDone", start);
+      clearTimeout(fallback);
+    };
   }, []);
 
   // Intervalo de escritura
