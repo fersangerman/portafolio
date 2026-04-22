@@ -39,8 +39,15 @@ export default function HeroReveal({
     });
   }, []);
 
-  // Typewriter arranca después de que el SplashScreen termina (3.2s) + pequeño margen
+  // Typewriter arranca cuando el splash termina (o inmediatamente si ya se mostró antes)
   useEffect(() => {
+    const splashAlreadyDone = sessionStorage.getItem("splashDone");
+    if (splashAlreadyDone) {
+      // Ya se mostró en esta sesión, arrancar casi inmediato
+      const boot = setTimeout(() => setCount(0), 200);
+      return () => clearTimeout(boot);
+    }
+    // Primera visita: esperar a que el splash termine
     const boot = setTimeout(() => setCount(0), 3400);
     return () => clearTimeout(boot);
   }, []);

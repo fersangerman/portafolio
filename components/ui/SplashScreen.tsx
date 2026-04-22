@@ -8,10 +8,18 @@ export default function SplashScreen() {
   const [phase, setPhase] = useState<Phase>("idle");
 
   useEffect(() => {
+    // Si ya se mostró en esta sesión, no volver a mostrar
+    if (sessionStorage.getItem("splashDone")) {
+      setPhase("done");
+      return;
+    }
     const t1 = setTimeout(() => setPhase("name"),     100);   // nombre entra
     const t2 = setTimeout(() => setPhase("subtitle"), 900);   // subtítulo entra
     const t3 = setTimeout(() => setPhase("exit"),     2400);  // todo sube
-    const t4 = setTimeout(() => setPhase("done"),     3200);  // desmonta
+    const t4 = setTimeout(() => {
+      setPhase("done");
+      sessionStorage.setItem("splashDone", "1");
+    }, 3200);  // desmonta
     return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
   }, []);
 
