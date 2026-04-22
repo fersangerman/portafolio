@@ -1,8 +1,6 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-const SplashScreen = dynamic(() => import("./SplashScreen"), { ssr: false });
+import SplashScreen from "./SplashScreen";
 
 export default function SplashScreenLoader() {
   return <SplashScreen />;

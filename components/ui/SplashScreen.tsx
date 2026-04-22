@@ -6,8 +6,10 @@ type Phase = "idle" | "name" | "subtitle" | "exit" | "done";
 
 export default function SplashScreen() {
   const [phase, setPhase] = useState<Phase>("idle");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const t1 = setTimeout(() => setPhase("name"),     100);
     const t2 = setTimeout(() => setPhase("subtitle"), 900);
     const t3 = setTimeout(() => setPhase("exit"),     2400);
@@ -18,7 +20,7 @@ export default function SplashScreen() {
     return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); clearTimeout(t4); };
   }, []);
 
-  if (phase === "done") return null;
+  if (!mounted || phase === "done") return null;
 
   const isExiting = phase === "exit";
 
@@ -39,7 +41,6 @@ export default function SplashScreen() {
         pointerEvents: isExiting ? "none" : "all",
       }}
     >
-      {/* Nombre */}
       <div style={{ overflow: "hidden" }}>
         <p
           style={{
@@ -58,7 +59,6 @@ export default function SplashScreen() {
         </p>
       </div>
 
-      {/* Subtítulo */}
       <div style={{ overflow: "hidden" }}>
         <p
           style={{
