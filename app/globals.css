@@ -34,3 +34,20 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ── Hero reveal animation ───────────────────────── */
+@keyframes heroReveal {
+  from {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-reveal {
+  opacity: 0;
+  animation: heroReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

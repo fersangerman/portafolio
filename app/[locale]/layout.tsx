@@ -4,9 +4,12 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import dynamic from "next/dynamic";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
+
+const SplashScreen = dynamic(() => import("@/components/ui/SplashScreen"), { ssr: false });
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -45,6 +48,7 @@ export default async function LocaleLayout({
     <html lang={locale} className={jakarta.variable}>
       <body className="antialiased bg-cream text-ink">
         <NextIntlClientProvider messages={messages}>
+          <SplashScreen />
           <Header />
           <main className="pt-16">{children}</main>
           <Footer />

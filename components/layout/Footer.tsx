@@ -20,12 +20,6 @@ export default function Footer() {
           >
             LinkedIn
           </a>
-          <a
-            href="mailto:fersangermans@gmail.com"
-            className="hover:text-ink transition-colors"
-          >
-            fersangermans@gmail.com
-          </a>
         </div>
       </div>
     </footer>
